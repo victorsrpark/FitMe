@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAD44C981B5DD19E004E0A69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44C971B5DD19E004E0A69 /* main.m */; };
+		EAD44C9B1B5DD19E004E0A69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44C9A1B5DD19E004E0A69 /* AppDelegate.m */; };
+		EAD44C9E1B5DD19E004E0A69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44C9D1B5DD19E004E0A69 /* ViewController.m */; };
+		EAD44CA11B5DD19E004E0A69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD44C9F1B5DD19E004E0A69 /* Main.storyboard */; };
+		EAD44CA31B5DD19E004E0A69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD44CA21B5DD19E004E0A69 /* Images.xcassets */; };
+		EAD44CA61B5DD19E004E0A69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD44CA41B5DD19E004E0A69 /* LaunchScreen.xib */; };
+		EAD44CB21B5DD19E004E0A69 /* FitMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CB11B5DD19E004E0A69 /* FitMeTests.m */; };
+		EAD44CBD1B5DD37C004E0A69 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CBC1B5DD37C004E0A69 /* SWRevealViewController.m */; };
+		EAD44CC11B5DD420004E0A69 /* WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CC01B5DD420004E0A69 /* WorkoutViewController.m */; };
+		EAD44CC41B5DD436004E0A69 /* ExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CC31B5DD436004E0A69 /* ExerciseViewController.m */; };
+		EAD44CC71B5DD454004E0A69 /* SidebarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CC61B5DD454004E0A69 /* SidebarTableViewController.m */; };
+		EAD44CCA1B5DD463004E0A69 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CC91B5DD463004E0A69 /* MainViewController.m */; };
+		EAE4196E1B5F420B00DFDE9E /* Week1-3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4196D1B5F420B00DFDE9E /* Week1-3ViewController.m */; };
+		EAE419711B5F421C00DFDE9E /* Week4-6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE419701B5F421C00DFDE9E /* Week4-6ViewController.m */; };
+		EAE419741B5F423100DFDE9E /* Week7-9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE419731B5F423100DFDE9E /* Week7-9ViewController.m */; };
+		EAE419771B5F45EC00DFDE9E /* Week10-12ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE419761B5F45EC00DFDE9E /* Week10-12ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAD44CAC1B5DD19E004E0A69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD44C8A1B5DD19E004E0A69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAD44C911B5DD19E004E0A69;
+			remoteInfo = FitMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAD44C921B5DD19E004E0A69 /* FitMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD44C961B5DD19E004E0A69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD44C971B5DD19E004E0A69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAD44C991B5DD19E004E0A69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAD44C9A1B5DD19E004E0A69 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EAD44C9C1B5DD19E004E0A69 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EAD44C9D1B5DD19E004E0A69 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EAD44CA01B5DD19E004E0A69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAD44CA21B5DD19E004E0A69 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAD44CA51B5DD19E004E0A69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EAD44CAB1B5DD19E004E0A69 /* FitMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD44CB01B5DD19E004E0A69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD44CB11B5DD19E004E0A69 /* FitMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FitMeTests.m; sourceTree = "<group>"; };
+		EAD44CBB1B5DD37C004E0A69 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../Downloads/Slideout-Sidebar-Demo-master/SidebarDemo/SWRevealViewController.h"; sourceTree = "<group>"; };
+		EAD44CBC1B5DD37C004E0A69 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../Downloads/Slideout-Sidebar-Demo-master/SidebarDemo/SWRevealViewController.m"; sourceTree = "<group>"; };
+		EAD44CBF1B5DD420004E0A69 /* WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutViewController.h; sourceTree = "<group>"; };
+		EAD44CC01B5DD420004E0A69 /* WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutViewController.m; sourceTree = "<group>"; };
+		EAD44CC21B5DD436004E0A69 /* ExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseViewController.h; sourceTree = "<group>"; };
+		EAD44CC31B5DD436004E0A69 /* ExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseViewController.m; sourceTree = "<group>"; };
+		EAD44CC51B5DD454004E0A69 /* SidebarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarTableViewController.h; sourceTree = "<group>"; };
+		EAD44CC61B5DD454004E0A69 /* SidebarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarTableViewController.m; sourceTree = "<group>"; };
+		EAD44CC81B5DD463004E0A69 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EAD44CC91B5DD463004E0A69 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		EAE4196C1B5F420B00DFDE9E /* Week1-3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Week1-3ViewController.h"; sourceTree = "<group>"; };
+		EAE4196D1B5F420B00DFDE9E /* Week1-3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Week1-3ViewController.m"; sourceTree = "<group>"; };
+		EAE4196F1B5F421C00DFDE9E /* Week4-6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Week4-6ViewController.h"; sourceTree = "<group>"; };
+		EAE419701B5F421C00DFDE9E /* Week4-6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Week4-6ViewController.m"; sourceTree = "<group>"; };
+		EAE419721B5F423100DFDE9E /* Week7-9ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Week7-9ViewController.h"; sourceTree = "<group>"; };
+		EAE419731B5F423100DFDE9E /* Week7-9ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Week7-9ViewController.m"; sourceTree = "<group>"; };
+		EAE419751B5F45EC00DFDE9E /* Week10-12ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Week10-12ViewController.h"; sourceTree = "<group>"; };
+		EAE419761B5F45EC00DFDE9E /* Week10-12ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Week10-12ViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAD44C8F1B5DD19E004E0A69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD44CA81B5DD19E004E0A69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAD44C891B5DD19E004E0A69 = {
+			isa = PBXGroup;
+			children = (
+				EAD44C941B5DD19E004E0A69 /* FitMe */,
+				EAD44CAE1B5DD19E004E0A69 /* FitMeTests */,
+				EAD44C931B5DD19E004E0A69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAD44C931B5DD19E004E0A69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAD44C921B5DD19E004E0A69 /* FitMe.app */,
+				EAD44CAB1B5DD19E004E0A69 /* FitMeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAD44C941B5DD19E004E0A69 /* FitMe */ = {
+			isa = PBXGroup;
+			children = (
+				EAD44CBE1B5DD38D004E0A69 /* SWRevealViewController */,
+				EAD44C991B5DD19E004E0A69 /* AppDelegate.h */,
+				EAD44C9A1B5DD19E004E0A69 /* AppDelegate.m */,
+				EAD44C9C1B5DD19E004E0A69 /* ViewController.h */,
+				EAD44C9D1B5DD19E004E0A69 /* ViewController.m */,
+				EAD44C9F1B5DD19E004E0A69 /* Main.storyboard */,
+				EAD44CA21B5DD19E004E0A69 /* Images.xcassets */,
+				EAD44CA41B5DD19E004E0A69 /* LaunchScreen.xib */,
+				EAD44C951B5DD19E004E0A69 /* Supporting Files */,
+				EAD44CBF1B5DD420004E0A69 /* WorkoutViewController.h */,
+				EAD44CC01B5DD420004E0A69 /* WorkoutViewController.m */,
+				EAD44CC21B5DD436004E0A69 /* ExerciseViewController.h */,
+				EAD44CC31B5DD436004E0A69 /* ExerciseViewController.m */,
+				EAD44CC51B5DD454004E0A69 /* SidebarTableViewController.h */,
+				EAD44CC61B5DD454004E0A69 /* SidebarTableViewController.m */,
+				EAD44CC81B5DD463004E0A69 /* MainViewController.h */,
+				EAD44CC91B5DD463004E0A69 /* MainViewController.m */,
+				EAE4196C1B5F420B00DFDE9E /* Week1-3ViewController.h */,
+				EAE4196D1B5F420B00DFDE9E /* Week1-3ViewController.m */,
+				EAE4196F1B5F421C00DFDE9E /* Week4-6ViewController.h */,
+				EAE419701B5F421C00DFDE9E /* Week4-6ViewController.m */,
+				EAE419721B5F423100DFDE9E /* Week7-9ViewController.h */,
+				EAE419731B5F423100DFDE9E /* Week7-9ViewController.m */,
+				EAE419751B5F45EC00DFDE9E /* Week10-12ViewController.h */,
+				EAE419761B5F45EC00DFDE9E /* Week10-12ViewController.m */,
+			);
+			path = FitMe;
+			sourceTree = "<group>";
+		};
+		EAD44C951B5DD19E004E0A69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAD44C961B5DD19E004E0A69 /* Info.plist */,
+				EAD44C971B5DD19E004E0A69 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAD44CAE1B5DD19E004E0A69 /* FitMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAD44CB11B5DD19E004E0A69 /* FitMeTests.m */,
+				EAD44CAF1B5DD19E004E0A69 /* Supporting Files */,
+			);
+			path = FitMeTests;
+			sourceTree = "<group>";
+		};
+		EAD44CAF1B5DD19E004E0A69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAD44CB01B5DD19E004E0A69 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAD44CBE1B5DD38D004E0A69 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EAD44CBB1B5DD37C004E0A69 /* SWRevealViewController.h */,
+				EAD44CBC1B5DD37C004E0A69 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAD44C911B5DD19E004E0A69 /* FitMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD44CB51B5DD19E004E0A69 /* Build configuration list for PBXNativeTarget "FitMe" */;
+			buildPhases = (
+				EAD44C8E1B5DD19E004E0A69 /* Sources */,
+				EAD44C8F1B5DD19E004E0A69 /* Frameworks */,
+				EAD44C901B5DD19E004E0A69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitMe;
+			productName = FitMe;
+			productReference = EAD44C921B5DD19E004E0A69 /* FitMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAD44CAA1B5DD19E004E0A69 /* FitMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD44CB81B5DD19E004E0A69 /* Build configuration list for PBXNativeTarget "FitMeTests" */;
+			buildPhases = (
+				EAD44CA71B5DD19E004E0A69 /* Sources */,
+				EAD44CA81B5DD19E004E0A69 /* Frameworks */,
+				EAD44CA91B5DD19E004E0A69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAD44CAD1B5DD19E004E0A69 /* PBXTargetDependency */,
+			);
+			name = FitMeTests;
+			productName = FitMeTests;
+			productReference = EAD44CAB1B5DD19E004E0A69 /* FitMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAD44C8A1B5DD19E004E0A69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Donald Seo";
+				TargetAttributes = {
+					EAD44C911B5DD19E004E0A69 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					EAD44CAA1B5DD19E004E0A69 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = EAD44C911B5DD19E004E0A69;
+					};
+				};
+			};
+			buildConfigurationList = EAD44C8D1B5DD19E004E0A69 /* Build configuration list for PBXProject "FitMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAD44C891B5DD19E004E0A69;
+			productRefGroup = EAD44C931B5DD19E004E0A69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAD44C911B5DD19E004E0A69 /* FitMe */,
+				EAD44CAA1B5DD19E004E0A69 /* FitMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAD44C901B5DD19E004E0A69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD44CA11B5DD19E004E0A69 /* Main.storyboard in Resources */,
+				EAD44CA61B5DD19E004E0A69 /* LaunchScreen.xib in Resources */,
+				EAD44CA31B5DD19E004E0A69 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD44CA91B5DD19E004E0A69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAD44C8E1B5DD19E004E0A69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD44CC41B5DD436004E0A69 /* ExerciseViewController.m in Sources */,
+				EAD44C9E1B5DD19E004E0A69 /* ViewController.m in Sources */,
+				EAD44C9B1B5DD19E004E0A69 /* AppDelegate.m in Sources */,
+				EAD44CCA1B5DD463004E0A69 /* MainViewController.m in Sources */,
+				EAE419771B5F45EC00DFDE9E /* Week10-12ViewController.m in Sources */,
+				EAD44CC11B5DD420004E0A69 /* WorkoutViewController.m in Sources */,
+				EAD44C981B5DD19E004E0A69 /* main.m in Sources */,
+				EAD44CBD1B5DD37C004E0A69 /* SWRevealViewController.m in Sources */,
+				EAE4196E1B5F420B00DFDE9E /* Week1-3ViewController.m in Sources */,
+				EAE419711B5F421C00DFDE9E /* Week4-6ViewController.m in Sources */,
+				EAE419741B5F423100DFDE9E /* Week7-9ViewController.m in Sources */,
+				EAD44CC71B5DD454004E0A69 /* SidebarTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD44CA71B5DD19E004E0A69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD44CB21B5DD19E004E0A69 /* FitMeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAD44CAD1B5DD19E004E0A69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAD44C911B5DD19E004E0A69 /* FitMe */;
+			targetProxy = EAD44CAC1B5DD19E004E0A69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAD44C9F1B5DD19E004E0A69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAD44CA01B5DD19E004E0A69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAD44CA41B5DD19E004E0A69 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAD44CA51B5DD19E004E0A69 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAD44CB31B5DD19E004E0A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAD44CB41B5DD19E004E0A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAD44CB61B5DD19E004E0A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EAD44CB71B5DD19E004E0A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EAD44CB91B5DD19E004E0A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FitMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitMe.app/FitMe";
+			};
+			name = Debug;
+		};
+		EAD44CBA1B5DD19E004E0A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FitMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitMe.app/FitMe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAD44C8D1B5DD19E004E0A69 /* Build configuration list for PBXProject "FitMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD44CB31B5DD19E004E0A69 /* Debug */,
+				EAD44CB41B5DD19E004E0A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAD44CB51B5DD19E004E0A69 /* Build configuration list for PBXNativeTarget "FitMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD44CB61B5DD19E004E0A69 /* Debug */,
+				EAD44CB71B5DD19E004E0A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAD44CB81B5DD19E004E0A69 /* Build configuration list for PBXNativeTarget "FitMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD44CB91B5DD19E004E0A69 /* Debug */,
+				EAD44CBA1B5DD19E004E0A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAD44C8A1B5DD19E004E0A69 /* Project object */;
+}
