@@ -108,28 +108,28 @@
     return self.categories[section];
 }
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    //UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-//    NSInteger index = [self itemIndexForIndexPath:indexPath];
-//    
-//    switch (index) {
-//        case 0:
-//            [self performSegueWithIdentifier:@"week1-3" sender:nil];
-//            break;
-//        case 1:
-//            [self performSegueWithIdentifier:@"week4-6" sender:nil];
-//            break;
-//        case 2:
-//            [self performSegueWithIdentifier:@"week7-9" sender:nil];
-//            break;
-//        case 3:
-//            [self performSegueWithIdentifier:@"week10-12" sender:nil];
-//            break;
-//       
-//        default:
-//            break;
-//    }
-//}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    //UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    NSInteger index = [self itemIndexForIndexPath:indexPath];
+    
+    switch (index) {
+        case 0:
+            [self performSegueWithIdentifier:@"week1-3" sender:self];
+            break;
+        case 1:
+            [self performSegueWithIdentifier:@"week4-6" sender:self];
+            break;
+        case 2:
+            [self performSegueWithIdentifier:@"week7-9" sender:self];
+            break;
+        case 3:
+            [self performSegueWithIdentifier:@"week10-12" sender:self];
+            break;
+       
+        default:
+            break;
+    }
+}
 
 
 

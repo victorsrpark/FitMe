@@ -19,10 +19,10 @@
 		EAD44CC41B5DD436004E0A69 /* ExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CC31B5DD436004E0A69 /* ExerciseViewController.m */; };
 		EAD44CC71B5DD454004E0A69 /* SidebarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CC61B5DD454004E0A69 /* SidebarTableViewController.m */; };
 		EAD44CCA1B5DD463004E0A69 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CC91B5DD463004E0A69 /* MainViewController.m */; };
-		EAE4196E1B5F420B00DFDE9E /* Week1-3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4196D1B5F420B00DFDE9E /* Week1-3ViewController.m */; };
-		EAE419711B5F421C00DFDE9E /* Week4-6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE419701B5F421C00DFDE9E /* Week4-6ViewController.m */; };
-		EAE419741B5F423100DFDE9E /* Week7-9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE419731B5F423100DFDE9E /* Week7-9ViewController.m */; };
-		EAE419771B5F45EC00DFDE9E /* Week10-12ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE419761B5F45EC00DFDE9E /* Week10-12ViewController.m */; };
+		EAE4196E1B5F420B00DFDE9E /* Week1_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4196D1B5F420B00DFDE9E /* Week1_3ViewController.m */; };
+		EAE419711B5F421C00DFDE9E /* Week4_6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE419701B5F421C00DFDE9E /* Week4_6ViewController.m */; };
+		EAE419741B5F423100DFDE9E /* Week7_9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE419731B5F423100DFDE9E /* Week7_9ViewController.m */; };
+		EAE419771B5F45EC00DFDE9E /* Week10_12ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE419761B5F45EC00DFDE9E /* Week10_12ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,14 +59,14 @@
 		EAD44CC61B5DD454004E0A69 /* SidebarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarTableViewController.m; sourceTree = "<group>"; };
 		EAD44CC81B5DD463004E0A69 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		EAD44CC91B5DD463004E0A69 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		EAE4196C1B5F420B00DFDE9E /* Week1-3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Week1-3ViewController.h"; sourceTree = "<group>"; };
-		EAE4196D1B5F420B00DFDE9E /* Week1-3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Week1-3ViewController.m"; sourceTree = "<group>"; };
-		EAE4196F1B5F421C00DFDE9E /* Week4-6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Week4-6ViewController.h"; sourceTree = "<group>"; };
-		EAE419701B5F421C00DFDE9E /* Week4-6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Week4-6ViewController.m"; sourceTree = "<group>"; };
-		EAE419721B5F423100DFDE9E /* Week7-9ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Week7-9ViewController.h"; sourceTree = "<group>"; };
-		EAE419731B5F423100DFDE9E /* Week7-9ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Week7-9ViewController.m"; sourceTree = "<group>"; };
-		EAE419751B5F45EC00DFDE9E /* Week10-12ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Week10-12ViewController.h"; sourceTree = "<group>"; };
-		EAE419761B5F45EC00DFDE9E /* Week10-12ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Week10-12ViewController.m"; sourceTree = "<group>"; };
+		EAE4196C1B5F420B00DFDE9E /* Week1_3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Week1_3ViewController.h; sourceTree = "<group>"; };
+		EAE4196D1B5F420B00DFDE9E /* Week1_3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Week1_3ViewController.m; sourceTree = "<group>"; };
+		EAE4196F1B5F421C00DFDE9E /* Week4_6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Week4_6ViewController.h; sourceTree = "<group>"; };
+		EAE419701B5F421C00DFDE9E /* Week4_6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Week4_6ViewController.m; sourceTree = "<group>"; };
+		EAE419721B5F423100DFDE9E /* Week7_9ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Week7_9ViewController.h; sourceTree = "<group>"; };
+		EAE419731B5F423100DFDE9E /* Week7_9ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Week7_9ViewController.m; sourceTree = "<group>"; };
+		EAE419751B5F45EC00DFDE9E /* Week10_12ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Week10_12ViewController.h; sourceTree = "<group>"; };
+		EAE419761B5F45EC00DFDE9E /* Week10_12ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Week10_12ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,14 +125,14 @@
 				EAD44CC61B5DD454004E0A69 /* SidebarTableViewController.m */,
 				EAD44CC81B5DD463004E0A69 /* MainViewController.h */,
 				EAD44CC91B5DD463004E0A69 /* MainViewController.m */,
-				EAE4196C1B5F420B00DFDE9E /* Week1-3ViewController.h */,
-				EAE4196D1B5F420B00DFDE9E /* Week1-3ViewController.m */,
-				EAE4196F1B5F421C00DFDE9E /* Week4-6ViewController.h */,
-				EAE419701B5F421C00DFDE9E /* Week4-6ViewController.m */,
-				EAE419721B5F423100DFDE9E /* Week7-9ViewController.h */,
-				EAE419731B5F423100DFDE9E /* Week7-9ViewController.m */,
-				EAE419751B5F45EC00DFDE9E /* Week10-12ViewController.h */,
-				EAE419761B5F45EC00DFDE9E /* Week10-12ViewController.m */,
+				EAE4196C1B5F420B00DFDE9E /* Week1_3ViewController.h */,
+				EAE4196D1B5F420B00DFDE9E /* Week1_3ViewController.m */,
+				EAE4196F1B5F421C00DFDE9E /* Week4_6ViewController.h */,
+				EAE419701B5F421C00DFDE9E /* Week4_6ViewController.m */,
+				EAE419721B5F423100DFDE9E /* Week7_9ViewController.h */,
+				EAE419731B5F423100DFDE9E /* Week7_9ViewController.m */,
+				EAE419751B5F45EC00DFDE9E /* Week10_12ViewController.h */,
+				EAE419761B5F45EC00DFDE9E /* Week10_12ViewController.m */,
 			);
 			path = FitMe;
 			sourceTree = "<group>";
@@ -277,13 +277,13 @@
 				EAD44C9E1B5DD19E004E0A69 /* ViewController.m in Sources */,
 				EAD44C9B1B5DD19E004E0A69 /* AppDelegate.m in Sources */,
 				EAD44CCA1B5DD463004E0A69 /* MainViewController.m in Sources */,
-				EAE419771B5F45EC00DFDE9E /* Week10-12ViewController.m in Sources */,
+				EAE419771B5F45EC00DFDE9E /* Week10_12ViewController.m in Sources */,
 				EAD44CC11B5DD420004E0A69 /* WorkoutViewController.m in Sources */,
 				EAD44C981B5DD19E004E0A69 /* main.m in Sources */,
 				EAD44CBD1B5DD37C004E0A69 /* SWRevealViewController.m in Sources */,
-				EAE4196E1B5F420B00DFDE9E /* Week1-3ViewController.m in Sources */,
-				EAE419711B5F421C00DFDE9E /* Week4-6ViewController.m in Sources */,
-				EAE419741B5F423100DFDE9E /* Week7-9ViewController.m in Sources */,
+				EAE4196E1B5F420B00DFDE9E /* Week1_3ViewController.m in Sources */,
+				EAE419711B5F421C00DFDE9E /* Week4_6ViewController.m in Sources */,
+				EAE419741B5F423100DFDE9E /* Week7_9ViewController.m in Sources */,
 				EAD44CC71B5DD454004E0A69 /* SidebarTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

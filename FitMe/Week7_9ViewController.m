@@ -1,15 +1,15 @@
 //
-//  Week1-3ViewController.m
+//  Week7-9ViewController.m
 //  FitMe
 //
 //  Created by Donald Seo on 2015. 7. 21..
 //  Copyright (c) 2015년 Donald Seo. All rights reserved.
 //
 
-#import "Week1-3ViewController.h"
+#import "Week7_9ViewController.h"
 #import "SWRevealViewController.h"
 
-@interface Week1_3ViewController ()
+@interface Week7_9ViewController ()
 
 @property (nonatomic) NSMutableArray *workouts;
 @property (nonatomic) NSArray *reps;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation Week1_3ViewController
+@implementation Week7_9ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,7 +48,7 @@
 #pragma mark - DataSource helper methods
 
 - (NSArray *) itemsInDays:(NSString *)targetDays {
-    NSPredicate *matchingPredicate = [NSPredicate predicateWithFormat:@"category == %@", targetDays];
+    NSPredicate *matchingPredicate = [NSPredicate predicateWithFormat:@"days == %@", targetDays];
     NSArray *daysItems = [self.workouts filteredArrayUsingPredicate:matchingPredicate];
     
     return daysItems;
