@@ -12,7 +12,7 @@
 @interface Week7_9ViewController ()
 
 @property (nonatomic) NSMutableArray *workouts;
-@property (nonatomic) NSArray *reps;
+
 @property (nonatomic) NSArray *days;
 
 @end
@@ -23,13 +23,13 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = YES;
     
-    self.workouts = @[@{@"name" : @"SQUATS", @"days" : @"DAY 1"}, @{@"name" : @"BENT OVER ROWS", @"days" : @"DAY 1"}, @{@"name" : @"BENCH PRESS", @"days" : @"DAY 1"}, @{@"name" : @"OVERHEAD PRESS", @"days" : @"DAY 1"}, @{@"name" : @"EXTERNAL ROTATIONS", @"days" : @"DAY 1"}, @{@"name" : @"SEATED CALF RAISES", @"days" : @"DAY 1"}, @{@"name" : @"MOUNTAIN CLIMBERS", @"days" : @"DAY 1"}, @{@"name" : @"PLANKS", @"days" : @"DAY 1"}, @{@"name" : @"DEADLIFT", @"days" : @"DAY 2"}, @{@"name" : @"KNEELING LANDMINE PRESS", @"days" : @"DAY 2"}, @{@"name" : @"ALT. ARNOLD PRESS", @"days" : @"DAY 2"}, @{@"name" : @"ALT. FRONT LUNGE", @"days" : @"DAY 2"}, @{@"name" : @"PULL OVER", @"days" : @"DAY 2"}, @{@"name" : @"WEIGHTED CRUNCHES", @"days" : @"DAY 2"}, @{@"name" : @"SIDE PLANKS", @"days" : @"DAY 2"}, @{@"name" : @"FRONT SQUAT", @"days" : @"DAY 3"}, @{@"name" : @"T-BAR ROW", @"days" : @"DAY 3"}, @{@"name" : @"DIPS", @"days" : @"DAY 3"}, @{@"name" : @"UPRIGHT ROW", @"days" : @"DAY 3"}, @{@"name" : @"GLUTE BRIDGES (WEIGHTED)", @"days" : @"DAY 3"}, @{@"name" : @"STANDING CALF RAISES", @"days" : @"DAY 3"}, @{@"name" : @"RUSSIAN TWIST", @"days" : @"DAY 3"}].mutableCopy;
-    
-    self.reps = @[@"15, 12, 10, 8, 6", @"12, 10, 8, 6, 6", @"15, 12, 10, 8, 6", @"12, 10, 8, 6, 6", @"3 x 12", @"3 x 15", @"3 x 30 SECONDS", @"3 x 30 SECONDS", @"15, 12, 10, 8, 6", @"15, 12, 10, 8, 8", @"12, 10, 8, 8, 6", @"5 x 10", @"3 x 15", @"3 x 15", @"3 x 30 SECONDS", @"15, 12, 10, 8, 6", @"12, 10, 8, 8, 6", @"5 x 15", @"15, 12, 10, 8, 8", @"3 x 10", @"3 x 15", @"3 x 30 (15 EACH SiDE)",];
-    self.days = @[@"DAY 1", @"DAY 2", @"DAY 3"];
+    self.workouts = @[@{@"name" : @"SUPERSET SQUATS with SPLIT SQUAT TWISTS", @"days" : @"DAY 1: QUADS + CALVES + ABS", @"reps" : @"4 x 10 and 4 x 10 (each side)"}, @{@"name" : @"SINGLE LEG PRESS", @"days" : @"DAY 1: QUADS + CALVES + ABS", @"reps" : @"3 x 15"}, @{@"name" : @"SUPERSET SINGLE LEG HIP EXTENSION with GOBLET SQUATS", @"days" : @"DAY 1: QUADS + CALVES + ABS", @"reps" : @"4 x 10 and 4 x 15"}, @{@"name" : @"SINGLE LEG CALF RAISE", @"days" : @"DAY 1: QUADS + CALVES + ABS", @"reps" : @"3 x 15(each side)"}, @{@"name" : @"ABDOMINAL ROLLER", @"days" : @"DAY 1: QUADS + CALVES + ABS", @"reps" : @"3 x 20"}, @{@"name" : @"OTIS-UPS", @"days" : @"DAY 1: QUADS + CALVES + ABS", @"reps" : @"3 x 20"}, @{@"name" : @"SUPERSET COMMANDO ROW with PULL-UPS", @"days" : @"DAY 2: CHEST + BACK", @"reps" : @"4 x 10(each side) and 4 x 10"}, @{@"name" : @"SUPER SET DUMBELL FLY with BARBELL BENCH", @"days" : @"DAY 2: CHEST + BACK", @"reps" : @"4 x 10 and 4 x 12"}, @{@"name" : @"SUPERSET T-BAR ROW with PULLOVERS", @"days" : @"DAY 2: CHEST + BACK", @"reps" : @"4 X 12 and 4 X 12"}, @{@"name" : @"SUPERSET INCLINE DUMBBELL PRESS(wide to close) with UNDERHAND DUMBBELL FLY", @"days" : @"DAY 2: CHEST + BACK", @"reps" : @"4 X 15 and 4 X 10"}, @{@"name" : @"SEATED DUMBBELL PRESS", @"days" : @"DAY 3: SHOULDERS + TRAPS + ABS", @"reps" : @"4 x 10"}, @{@"name" : @"SUPERSET ALT. STANDING ARNOLD PRESS with  CABLE REVERSE FLY", @"days" : @"DAY 3: SHOULDERS + TRAPS + ABS", @"reps" : @"4 x 12 and 4 x 15"}, @{@"name" : @"SUPERSET SINGLE ARM DUMBBELL LATERAL RAISE with FACE PULLS", @"days" : @"DAY 3: SHOULDERS + TRAPS + ABS", @"reps" : @"3 x 10 and 3 x 15"}, @{@"name" : @"SUPERSET DUMBBELL SHRUGS  with FARMER WALK", @"days" : @"DAY 3: SHOULDERS + TRAPS + ABS", @"reps" : @"3 x 15 and 3 x FAILURE"}, @{@"name" : @"REVERSE CRUNCHES", @"days" : @"DAY 3: SHOULDERS + TRAPS + ABS", @"reps" : @"3 x 20"}, @{@"name" : @"WINDMILL", @"days" : @"DAY 3: SHOULDERS + TRAPS + ABS", @"reps" : @"3 x 15(each side)"}, @{@"name" : @"SUPERSET REVERSE GRIP BENCH PRESS with REVERSE GRIP BENT-OVER ROW", @"days" : @"DAY 4: TRICEPS + BICEPS + FOREARMS", @"reps" : @"4 x 12 and 4 x 12"}, @{@"name" : @"SUPERSET BARBELL SKULL CRUSHER with PREACHER BENCH BARBELL CURL", @"days" : @"DAY 4: TRICEPS + BICEPS + FOREARMS", @"reps" : @"3 x 12 and 3 x 12"}, @{@"name" : @"TRICEPS DIPS", @"days" : @"DAY 4: TRICEPS + BICEPS + FOREARMS", @"reps" : @"3 x 15"}, @{@"name" : @"HAMMER CURLS", @"days" : @"DAY 4: TRICEPS + BICEPS + FOREARMS", @"reps" : @"3 x 12"}, @{@"name" : @"STANDING BEHIND THE BACK FINGER CURLS", @"days" : @"DAY 4: TRICEPS + BICEPS + FOREARMS", @"reps" : @"4 x 15"}, @{@"name" : @"WRIST ROLLER", @"days" : @"DAY 4: TRICEPS + BICEPS + FOREARMS", @"reps" : @"3 x 2 COMPLETE ROLLS"}, @{@"name" : @"SUPERSET GLUTE BRIDGES (WEIGHTED) with LYING HAMSTRING CURL", @"days" : @"DAY 5: HAMSTRINGS + CALVES + ABS: HAMSTRINGS + CALVES + ABS", @"reps" : @"4 x 12 and 4 x 10"}, @{@"name" : @"ROMANIAN DEADLIFT (RDL)", @"days" : @"DAY 5: HAMSTRINGS + CALVES + ABS", @"reps" : @"4 x 12"}, @{@"name" : @"UNILATERAL RDL", @"days" : @"DAY 5: HAMSTRINGS + CALVES + ABS", @"reps" : @"3 x 12(each side)"}, @{@"name" : @"WEIGHTED DONKEY CALF RAISE", @"days" : @"DAY 5: HAMSTRINGS + CALVES + ABS", @"reps" : @"3 x 15"}, @{@"name" : @"STANDING CALF RAISE", @"days" : @"DAY 5: HAMSTRINGS + CALVES + ABS", @"reps" : @"3 x 20"}, @{@"name" : @"SUPERSET MOUNTAIN CLIMBER with PLANK", @"days" : @"DAY 5: HAMSTRINGS + CALVES + ABS", @"reps" : @"3 x 30 SECONDS and 3 X 30 SECONDS"}].mutableCopy;
     
     
-    self.title = @"WEEK 1-3, PHASE 1";
+    self.days = @[@"DAY 1: QUADS + CALVES + ABS", @"DAY 2: CHEST + BACK", @"DAY 3: SHOULDERS + TRAPS + ABS", @"DAY 4: TRICEPS + BICEPS + FOREARMS", @"DAY 5: HAMSTRINGS + CALVES + ABS"];
+    
+    
+    self.title = @"WEEK 7-9, PHASE 3";
     
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )
@@ -95,7 +95,7 @@
     NSDictionary *workouts = [self itemAtIndexPath:indexPath];
     
     cell.textLabel.text = workouts[@"name"];
-    cell.detailTextLabel.text = [_reps objectAtIndex:indexPath.row];
+    cell.detailTextLabel.text = workouts[@"reps"];
     //    NSLog(@"cell.textLabel.text %@", cell.textLabel.text);
     
     

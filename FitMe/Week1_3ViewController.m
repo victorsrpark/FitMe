@@ -12,8 +12,8 @@
 @interface Week1_3ViewController ()
 
 @property (nonatomic) NSMutableArray *workouts;
-@property (nonatomic) NSArray *reps;
 @property (nonatomic) NSArray *days;
+
 
 @end
 
@@ -23,14 +23,15 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = YES;
     
-    self.workouts = @[@{@"name" : @"SQUATS", @"days" : @"DAY 1"}, @{@"name" : @"BENT OVER ROWS", @"days" : @"DAY 1"}, @{@"name" : @"BENCH PRESS", @"days" : @"DAY 1"}, @{@"name" : @"OVERHEAD PRESS", @"days" : @"DAY 1"}, @{@"name" : @"EXTERNAL ROTATIONS", @"days" : @"DAY 1"}, @{@"name" : @"SEATED CALF RAISES", @"days" : @"DAY 1"}, @{@"name" : @"MOUNTAIN CLIMBERS", @"days" : @"DAY 1"}, @{@"name" : @"PLANKS", @"days" : @"DAY 1"}, @{@"name" : @"DEADLIFT", @"days" : @"DAY 2"}, @{@"name" : @"KNEELING LANDMINE PRESS", @"days" : @"DAY 2"}, @{@"name" : @"ALT. ARNOLD PRESS", @"days" : @"DAY 2"}, @{@"name" : @"ALT. FRONT LUNGE", @"days" : @"DAY 2"}, @{@"name" : @"PULL OVER", @"days" : @"DAY 2"}, @{@"name" : @"WEIGHTED CRUNCHES", @"days" : @"DAY 2"}, @{@"name" : @"SIDE PLANKS", @"days" : @"DAY 2"}, @{@"name" : @"FRONT SQUAT", @"days" : @"DAY 3"}, @{@"name" : @"T-BAR ROW", @"days" : @"DAY 3"}, @{@"name" : @"DIPS", @"days" : @"DAY 3"}, @{@"name" : @"UPRIGHT ROW", @"days" : @"DAY 3"}, @{@"name" : @"GLUTE BRIDGES (WEIGHTED)", @"days" : @"DAY 3"}, @{@"name" : @"STANDING CALF RAISES", @"days" : @"DAY 3"}, @{@"name" : @"RUSSIAN TWIST", @"days" : @"DAY 3"}].mutableCopy;
+    self.workouts = @[@{@"name" : @"SQUATS", @"days" : @"DAY 1", @"reps": @"15, 12, 10, 8, 6"}, @{@"name" : @"BENT OVER ROWS", @"days" : @"DAY 1", @"reps": @"12, 10, 8, 6, 6"}, @{@"name" : @"BENCH PRESS", @"days" : @"DAY 1", @"reps": @"15, 12, 10, 8, 6"}, @{@"name" : @"OVERHEAD PRESS", @"days" : @"DAY 1", @"reps": @"12, 10, 8, 6, 6"}, @{@"name" : @"EXTERNAL ROTATIONS", @"days" : @"DAY 1", @"reps": @"3 x 12"}, @{@"name" : @"SEATED CALF RAISES", @"days" : @"DAY 1", @"reps": @"3 x 15"}, @{@"name" : @"MOUNTAIN CLIMBERS", @"days" : @"DAY 1", @"reps": @"3 x 30 SECONDS"}, @{@"name" : @"PLANKS", @"days" : @"DAY 1", @"reps": @"3 x 30 SECONDS"}, @{@"name" : @"DEADLIFT", @"days" : @"DAY 2", @"reps": @"15, 12, 10, 8, 6"}, @{@"name" : @"KNEELING LANDMINE PRESS", @"days" : @"DAY 2", @"reps": @"15, 12, 10, 8, 8"}, @{@"name" : @"ALT. ARNOLD PRESS", @"days" : @"DAY 2", @"reps": @"12, 10, 8, 8, 6"}, @{@"name" : @"ALT. FRONT LUNGE", @"days" : @"DAY 2", @"reps": @"5 x 10"}, @{@"name" : @"PULL OVER", @"days" : @"DAY 2", @"reps": @"3 x 15"}, @{@"name" : @"WEIGHTED CRUNCHES", @"days" : @"DAY 2", @"reps": @"3 x 15"}, @{@"name" : @"SIDE PLANKS", @"days" : @"DAY 2", @"reps": @"3 x 30 SECONDS"}, @{@"name" : @"FRONT SQUAT", @"days" : @"DAY 3", @"reps": @"15, 12, 10, 8, 6"}, @{@"name" : @"T-BAR ROW", @"days" : @"DAY 3", @"reps": @"12, 10, 8, 8, 6"}, @{@"name" : @"DIPS", @"days" : @"DAY 3", @"reps": @"5 x 15"}, @{@"name" : @"UPRIGHT ROW", @"days" : @"DAY 3", @"reps": @"15, 12, 10, 8, 8"}, @{@"name" : @"GLUTE BRIDGES (WEIGHTED)", @"days" : @"DAY 3", @"reps": @"3 x 10"}, @{@"name" : @"STANDING CALF RAISES", @"days" : @"DAY 3", @"reps": @"3 x 15"}, @{@"name" : @"RUSSIAN TWIST", @"days" : @"DAY 3", @"reps": @"3 x 30 (15 EACH SIDE)"}].mutableCopy;
     
-    self.reps = @[@"15, 12, 10, 8, 6", @"12, 10, 8, 6, 6", @"15, 12, 10, 8, 6", @"12, 10, 8, 6, 6", @"3 x 12", @"3 x 15", @"3 x 30 SECONDS", @"3 x 30 SECONDS", @"15, 12, 10, 8, 6", @"15, 12, 10, 8, 8", @"12, 10, 8, 8, 6", @"5 x 10", @"3 x 15", @"3 x 15", @"3 x 30 SECONDS", @"15, 12, 10, 8, 6", @"12, 10, 8, 8, 6", @"5 x 15", @"15, 12, 10, 8, 8", @"3 x 10", @"3 x 15", @"3 x 30 (15 EACH SiDE)",];
+//    self.reps = @[@"15, 12, 10, 8, 6", @"12, 10, 8, 6, 6", , @"12, 10, 8, 6, 6", @"3 x 12", @"3 x 15", @"3 x 30 SECONDS", @"3 x 30 SECONDS", @"15, 12, 10, 8, 6", @"15, 12, 10, 8, 8", @"12, 10, 8, 8, 6", @"5 x 10", @"3 x 15", @"3 x 15", @"3 x 30 SECONDS", @"15, 12, 10, 8, 6", @"12, 10, 8, 8, 6", @"5 x 15", @"15, 12, 10, 8, 8", @"3 x 10", @"3 x 15", @"3 x 30 (15 EACH SIDE)"];
     self.days = @[@"DAY 1", @"DAY 2", @"DAY 3"];
     
     
     self.title = @"WEEK 1-3, PHASE 1";
     
+
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )
     {
@@ -51,6 +52,7 @@
     NSPredicate *matchingPredicate = [NSPredicate predicateWithFormat:@"days == %@", targetDays];
     NSArray *daysItems = [self.workouts filteredArrayUsingPredicate:matchingPredicate];
     
+    //NSLog(@"itemsInDays method returns%@", daysItems);
     return daysItems;
 }
 
@@ -85,6 +87,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     static NSString *CellIdentifier = @"workoutrow";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
@@ -95,11 +98,11 @@
     NSDictionary *workouts = [self itemAtIndexPath:indexPath];
     
     cell.textLabel.text = workouts[@"name"];
-    cell.detailTextLabel.text = [_reps objectAtIndex:indexPath.row];
-    //    NSLog(@"cell.textLabel.text %@", cell.textLabel.text);
+
+    cell.detailTextLabel.text = workouts[@"reps"];
     
-    
-    
+      
+    [cell layoutIfNeeded];
     return cell;
     
 }
