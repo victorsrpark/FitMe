@@ -1,15 +1,15 @@
 //
-//  Week4-6ViewController.m
+//  W4_6WorkoutViewController.m
 //  FitMe
 //
-//  Created by Donald Seo on 2015. 7. 21..
+//  Created by Donald Seo on 2015. 7. 27..
 //  Copyright (c) 2015년 Donald Seo. All rights reserved.
 //
 
-#import "Week4_6ViewController.h"
+#import "W4_6WorkoutViewController.h"
 #import "SWRevealViewController.h"
 
-@interface Week4_6ViewController ()
+@interface W4_6WorkoutViewController ()
 
 @property (nonatomic) NSMutableArray *workouts;
 
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation Week4_6ViewController
+@implementation W4_6WorkoutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -97,6 +97,7 @@
     cell.textLabel.text = workouts[@"name"];
     cell.textLabel.numberOfLines = 0;
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    
     cell.detailTextLabel.text = workouts[@"reps"];
     //NSLog(@"cell.detailtextLabel.text %@", cell.detailTextLabel.text);
     
@@ -114,3 +115,4 @@
 
 
 @end
+

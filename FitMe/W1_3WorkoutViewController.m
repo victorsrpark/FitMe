@@ -1,15 +1,15 @@
 //
-//  Week1-3ViewController.m
+//  W1_3WorkoutViewController.m
 //  FitMe
 //
-//  Created by Donald Seo on 2015. 7. 21..
+//  Created by Donald Seo on 2015. 7. 27..
 //  Copyright (c) 2015년 Donald Seo. All rights reserved.
 //
 
-#import "Week1_3ViewController.h"
+#import "W1_3WorkoutViewController.h"
 #import "SWRevealViewController.h"
 
-@interface Week1_3ViewController ()
+@interface W1_3WorkoutViewController ()
 
 @property (nonatomic) NSMutableArray *workouts;
 @property (nonatomic) NSArray *days;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation Week1_3ViewController
+@implementation W1_3WorkoutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,13 +25,13 @@
     
     self.workouts = @[@{@"name" : @"SQUATS", @"days" : @"DAY 1", @"reps": @"15, 12, 10, 8, 6"}, @{@"name" : @"BENT OVER ROWS", @"days" : @"DAY 1", @"reps": @"12, 10, 8, 6, 6"}, @{@"name" : @"BENCH PRESS", @"days" : @"DAY 1", @"reps": @"15, 12, 10, 8, 6"}, @{@"name" : @"OVERHEAD PRESS", @"days" : @"DAY 1", @"reps": @"12, 10, 8, 6, 6"}, @{@"name" : @"EXTERNAL ROTATIONS", @"days" : @"DAY 1", @"reps": @"3 x 12"}, @{@"name" : @"SEATED CALF RAISES", @"days" : @"DAY 1", @"reps": @"3 x 15"}, @{@"name" : @"MOUNTAIN CLIMBERS", @"days" : @"DAY 1", @"reps": @"3 x 30 SECONDS"}, @{@"name" : @"PLANKS", @"days" : @"DAY 1", @"reps": @"3 x 30 SECONDS"}, @{@"name" : @"DEADLIFT", @"days" : @"DAY 2", @"reps": @"15, 12, 10, 8, 6"}, @{@"name" : @"KNEELING LANDMINE PRESS", @"days" : @"DAY 2", @"reps": @"15, 12, 10, 8, 8"}, @{@"name" : @"ALT. ARNOLD PRESS", @"days" : @"DAY 2", @"reps": @"12, 10, 8, 8, 6"}, @{@"name" : @"ALT. FRONT LUNGE", @"days" : @"DAY 2", @"reps": @"5 x 10"}, @{@"name" : @"PULL OVER", @"days" : @"DAY 2", @"reps": @"3 x 15"}, @{@"name" : @"WEIGHTED CRUNCHES", @"days" : @"DAY 2", @"reps": @"3 x 15"}, @{@"name" : @"SIDE PLANKS", @"days" : @"DAY 2", @"reps": @"3 x 30 SECONDS"}, @{@"name" : @"FRONT SQUAT", @"days" : @"DAY 3", @"reps": @"15, 12, 10, 8, 6"}, @{@"name" : @"T-BAR ROW", @"days" : @"DAY 3", @"reps": @"12, 10, 8, 8, 6"}, @{@"name" : @"DIPS", @"days" : @"DAY 3", @"reps": @"5 x 15"}, @{@"name" : @"UPRIGHT ROW", @"days" : @"DAY 3", @"reps": @"15, 12, 10, 8, 8"}, @{@"name" : @"GLUTE BRIDGES (WEIGHTED)", @"days" : @"DAY 3", @"reps": @"3 x 10"}, @{@"name" : @"STANDING CALF RAISES", @"days" : @"DAY 3", @"reps": @"3 x 15"}, @{@"name" : @"RUSSIAN TWIST", @"days" : @"DAY 3", @"reps": @"3 x 30 (15 EACH SIDE)"}].mutableCopy;
     
-//    self.reps = @[@"15, 12, 10, 8, 6", @"12, 10, 8, 6, 6", , @"12, 10, 8, 6, 6", @"3 x 12", @"3 x 15", @"3 x 30 SECONDS", @"3 x 30 SECONDS", @"15, 12, 10, 8, 6", @"15, 12, 10, 8, 8", @"12, 10, 8, 8, 6", @"5 x 10", @"3 x 15", @"3 x 15", @"3 x 30 SECONDS", @"15, 12, 10, 8, 6", @"12, 10, 8, 8, 6", @"5 x 15", @"15, 12, 10, 8, 8", @"3 x 10", @"3 x 15", @"3 x 30 (15 EACH SIDE)"];
+    //    self.reps = @[@"15, 12, 10, 8, 6", @"12, 10, 8, 6, 6", , @"12, 10, 8, 6, 6", @"3 x 12", @"3 x 15", @"3 x 30 SECONDS", @"3 x 30 SECONDS", @"15, 12, 10, 8, 6", @"15, 12, 10, 8, 8", @"12, 10, 8, 8, 6", @"5 x 10", @"3 x 15", @"3 x 15", @"3 x 30 SECONDS", @"15, 12, 10, 8, 6", @"12, 10, 8, 8, 6", @"5 x 15", @"15, 12, 10, 8, 8", @"3 x 10", @"3 x 15", @"3 x 30 (15 EACH SIDE)"];
     self.days = @[@"DAY 1", @"DAY 2", @"DAY 3"];
     
     
     self.title = @"WEEK 1-3, PHASE 1";
     
-
+    
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )
     {
@@ -100,10 +100,10 @@
     cell.textLabel.text = workouts[@"name"];
     cell.textLabel.numberOfLines = 0;
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
-
+    
     cell.detailTextLabel.text = workouts[@"reps"];
     
-      
+    
     [cell layoutIfNeeded];
     return cell;
     
@@ -117,3 +117,4 @@
 
 
 @end
+

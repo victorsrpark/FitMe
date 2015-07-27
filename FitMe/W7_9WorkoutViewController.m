@@ -1,15 +1,15 @@
 //
-//  Week7-9ViewController.m
+//  W7_9WorkoutViewController.m
 //  FitMe
 //
-//  Created by Donald Seo on 2015. 7. 21..
+//  Created by Donald Seo on 2015. 7. 27..
 //  Copyright (c) 2015년 Donald Seo. All rights reserved.
 //
 
-#import "Week7_9ViewController.h"
+#import "W7_9WorkoutViewController.h"
 #import "SWRevealViewController.h"
 
-@interface Week7_9ViewController ()
+@interface W7_9WorkoutViewController ()
 
 @property (nonatomic) NSMutableArray *workouts;
 
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation Week7_9ViewController
+@implementation W7_9WorkoutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -97,6 +97,7 @@
     cell.textLabel.text = workouts[@"name"];
     cell.textLabel.numberOfLines = 0;
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    
     cell.detailTextLabel.text = workouts[@"reps"];
     //    NSLog(@"cell.textLabel.text %@", cell.textLabel.text);
     
@@ -114,3 +115,4 @@
 
 
 @end
+

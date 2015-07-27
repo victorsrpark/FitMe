@@ -1,15 +1,15 @@
 //
-//  Week10-12ViewController.m
+//  W10_12WorkoutViewController.m
 //  FitMe
 //
-//  Created by Donald Seo on 2015. 7. 21..
+//  Created by Donald Seo on 2015. 7. 27..
 //  Copyright (c) 2015년 Donald Seo. All rights reserved.
 //
 
-#import "Week10_12ViewController.h"
+#import "W10_12WorkoutViewController.h"
 #import "SWRevealViewController.h"
 
-@interface Week10_12ViewController ()
+@interface W10_12WorkoutViewController ()
 
 @property (nonatomic) NSMutableArray *workouts;
 
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation Week10_12ViewController
+@implementation W10_12WorkoutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +25,7 @@
     
     self.workouts = @[@{@"name" : @"SUPERSET STRAIGHT ARM PULL DOWNS and PULL-UPS", @"days" : @"DAY 1 : BACK + CHEST + ABS", @"reps" : @"4 x 15 and 4 x 12"}, @{@"name" : @"SUPERSET ALT. DUMBBELL PRESS and DUMBBELL WIDE TO CLOSE PRESS", @"days" : @"DAY 1 : BACK + CHEST + ABS", @"reps" : @"4 x 10 and 4 x 8"}, @{@"name" : @"SUPERSET FACE PULL and PENDLAY ROW", @"days" : @"DAY 1 : BACK + CHEST + ABS", @"reps" : @"4 x 12 and 4 x 12"}, @{@"name" : @"SUPERSET CHEST DIPS and PULL OVER", @"days" : @"DAY 1 : BACK + CHEST + ABS", @"reps" : @"4 x 15 and 4 x 12"}, @{@"name" : @"HANGING LEG RAISE", @"days" : @"DAY 1 : BACK + CHEST + ABS", @"reps" : @"3 x 15"}, @{@"name" : @"BAND WOOD CHOPS", @"days" : @"DAY 1 : BACK + CHEST + ABS", @"reps" : @"3 x 15"}, @{@"name" : @"SQUATS", @"days" : @"DAY 2 : LEGS + CALVES + ABS", @"reps" : @"15, 10, 8, 4"}, @{@"name" : @"SUPERSET WALKING LUNGES and BARBELL HACK SQUATS", @"days" : @"DAY 2 : LEGS + CALVES + ABS", @"reps" : @"4 x 20 and 4 x 15"}, @{@"name" : @"SUPERSET BARBELL RDL and MANUAL HAMSTRING CURLS", @"days" : @"DAY 2 : LEGS + CALVES + ABS", @"reps" : @"3 x 12 and 3 x 12"}, @{@"name" : @"SEATED CALF RAISE", @"days" : @"DAY 2 : LEGS + CALVES + ABS", @"reps" : @"3 x 20"}, @{@"name" : @"OTIS UPS", @"days" : @"DAY 2 : LEGS + CALVES + ABS", @"reps" : @"3 x 15"}, @{@"name" : @"RUSSIAN TWISTS", @"days" : @"DAY 2 : LEGS + CALVES + ABS", @"reps" : @"3 x 10"}, @{@"name" : @"SUPERSET SEATED BARBELL SHOULDER PRESS and ALT. UPRIGHT ROW", @"days" : @"DAY 3 : SHOULDERS + TRAPS + ABS", @"reps" : @"12, 10, 8, 6 and 4 x 12"}, @{@"name" : @"SUPERSET FACE PULLS and BENT OVER FRONT/LATERAL/REVERSE RAISE", @"days" : @"DAY 3 : SHOULDERS + TRAPS + ABS", @"reps" : @"3 x 10 and 3 x 5"}, @{@"name" : @"SUPERSET STEERING WHEELS and LATERAL RAISE", @"days" : @"DAY 3 : SHOULDERS + TRAPS + ABS", @"reps" : @"3 x 10 and 3 x 15"}, @{@"name" : @"REAR SHRUGS", @"days" : @"DAY 3 : SHOULDERS + TRAPS + ABS", @"reps" : @"4 x 15"}, @{@"name" : @"CABLE EXTERNAL ROTATIONS", @"days" : @"DAY 3 : SHOULDERS + TRAPS + ABS", @"reps" : @"3 x 12"}, @{@"name" : @"SUPERSET WEIGHTED PLANKS and MOUNTAIN CLIMBERS", @"days" : @"DAY 3 : SHOULDERS + TRAPS + ABS", @"reps" : @"3 x 30 SEC  and 3 x 30 SEC"}, @{@"name" : @"SUPERSET CLOSE GRIP BARBELL PRESS and WEIGHTED CHIN UPS", @"days" : @"DAY 4 : TRICEPS + BICEPS + FOREARMS", @"reps" : @"4 x 15 and 4 x 15"}, @{@"name" : @"SUPERSET BILATERAL KICKBACKS and PLATE PINCH REVERSE CURL", @"days" : @"DAY 4 : TRICEPS + BICEPS + FOREARMS", @"reps" : @"3 x 15  and 3 x 15"}, @{@"name" : @"SUPERSET SKULLCRUSHER AND BARBELL CURL", @"days" : @"DAY 4 : TRICEPS + BICEPS + FOREARMS", @"reps" : @"3 x 10  and 3 x 3 drop set until failure"}, @{@"name" : @"SEATED UNILATERAL FINGER CURL", @"days" : @"DAY 4 : TRICEPS + BICEPS + FOREARMS", @"reps" : @"3 x 15"}, @{@"name" : @"WRIST ROLLER", @"days" : @"DAY 4 : TRICEPS + BICEPS + FOREARMS", @"reps" : @"3 x FAILURE"}, @{@"name" : @"BARBELL DEADLIFT", @"days" : @"DAY 5 : BACK + CHEST + ABS", @"reps" : @"12, 8, 4, 2"}, @{@"name" : @"BARBELL BENCH", @"days" : @"DAY 5 : BACK + CHEST + ABS", @"reps" : @"12, 8, 4, 2"}, @{@"name" : @"SUPERSET DUMBBELL UNILATERAL ROW and DUMBBELL UNILATERAL PRESS", @"days" : @"DAY 5 : BACK + CHEST + ABS", @"reps" : @"3 x 12 and 3 x 12"}, @{@"name" : @"SUPERSET BARBELL PULLOVER and DUMBELL FLYES", @"days" : @"DAY 5 : BACK + CHEST + ABS", @"reps" : @"3 x 10 and 3 x 15"}, @{@"name" : @"SUPERSET PULL-UPS and PUSH-UPS TWIST", @"days" : @"DAY 5 : BACK + CHEST + ABS", @"reps" : @"3 x FAILURE and 3 x FAILURE"}, @{@"name" : @"DOUBLE CRUNCH", @"days" : @"DAY 5 : BACK + CHEST + ABS", @"reps" : @"3 x 15"}, @{@"name" : @"OBLIQUE CRUNCH", @"days" : @"DAY 5 : BACK + CHEST + ABS", @"reps" : @"3 x 20"}, @{@"name" : @"SUPERSET LEG PRESS and DUMBBELL SWINGS", @"days" : @"DAY 6 : LEGS + SHOULDERS + ABS", @"reps" : @"15, 12, 10, 8 and 4 x 15"}, @{@"name" : @"SUPERSET BULGARIAN SPLIT SQUATS and UNILATERAL RDL", @"days" : @"DAY 6 : LEGS + SHOULDERS + ABS", @"reps" : @"3 x 10 and 3 x 10"}, @{@"name" : @"SUPERSET ARNOLD PRESS and SINGLE ARM BENT OVER LATERAL RAISE", @"days" : @"DAY 6 : LEGS + SHOULDERS + ABS", @"reps" : @"3 x 10 and 3 x 12"}, @{@"name" : @"SUPERSET FARMER SQUATS and FARMER WALKS", @"days" : @"DAY 6 : LEGS + SHOULDERS + ABS", @"reps" : @"3 x 10 and 3 x 1 MINUTE"}, @{@"name" : @"SUPERSET REVERSE UPRIGHT ROW and PLATE FRONT RAISE", @"days" : @"DAY 6 : LEGS + SHOULDERS + ABS", @"reps" : @"3 x 12 and 3 x 12"}, @{@"name" : @"WEIGHTED CRUNCH", @"days" : @"DAY 6 : LEGS + SHOULDERS + ABS", @"reps" : @"3 x 10"}, @{@"name" : @"LYING LEG RAISE W/HIP THRUST", @"days" : @"DAY 6 : LEGS + SHOULDERS + ABS", @"reps" : @"3 x 15"}].mutableCopy;
     
-        self.days = @[@"DAY 1 : BACK + CHEST + ABS", @"DAY 2 : LEGS + CALVES + ABS", @"DAY 3 : SHOULDERS + TRAPS + ABS", @"DAY 4 : TRICEPS + BICEPS + FOREARMS", @"DAY 5 : BACK + CHEST + ABS", @"DAY 6 : LEGS + SHOULDERS + ABS"];
+    self.days = @[@"DAY 1 : BACK + CHEST + ABS", @"DAY 2 : LEGS + CALVES + ABS", @"DAY 3 : SHOULDERS + TRAPS + ABS", @"DAY 4 : TRICEPS + BICEPS + FOREARMS", @"DAY 5 : BACK + CHEST + ABS", @"DAY 6 : LEGS + SHOULDERS + ABS"];
     
     
     self.title = @"WEEK 1-3, PHASE 1";
@@ -96,6 +96,7 @@
     cell.textLabel.text = workouts[@"name"];
     cell.textLabel.numberOfLines = 0;
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    
     cell.detailTextLabel.text = workouts[@"reps"];
     //    NSLog(@"cell.textLabel.text %@", cell.textLabel.text);
     
@@ -113,3 +114,4 @@
 
 
 @end
+
