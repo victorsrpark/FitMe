@@ -98,6 +98,13 @@
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
     
     cell.detailTextLabel.text = workouts[@"reps"];
+    
+    if ([workouts[@"completed"] boolValue]) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+
     //    NSLog(@"cell.textLabel.text %@", cell.textLabel.text);
     
     
@@ -109,7 +116,25 @@
     return self.days[section];
 }
 
+#pragma mark - Table View delegate
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSInteger index = [self itemIndexForIndexPath:indexPath];
+    
+    
+    NSMutableDictionary *item = [self.workouts[index] mutableCopy];
+    BOOL completed = [item[@"completed"] boolValue];
+    item[@"completed"] = @(!completed);
+    
+    self.workouts[indexPath.row] = item;
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = ([item[@"completed"] boolValue]) ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
 
 
 
