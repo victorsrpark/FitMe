@@ -8,6 +8,8 @@
 
 #import "W10_12WorkoutViewController.h"
 #import "SWRevealViewController.h"
+#import "MGSwipeTableCell.h"
+#import "MGSwipeButton.h"
 
 @interface W10_12WorkoutViewController ()
 
@@ -85,10 +87,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"workoutrow";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    MGSwipeTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[MGSwipeTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     NSDictionary *workouts = [self itemAtIndexPath:indexPath];
@@ -99,11 +101,23 @@
     
     cell.detailTextLabel.text = workouts[@"reps"];
     
-    if ([workouts[@"completed"] boolValue]) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    } else {
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }
+    //configure left buttons
+    cell.leftButtons = @[[MGSwipeButton buttonWithTitle:@"A" backgroundColor:[UIColor greenColor]]];
+    cell.leftSwipeSettings.transition = MGSwipeTransition3D;
+    
+    
+    
+    //configure right buttons
+    cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"X" backgroundColor:[UIColor redColor]],
+                          [MGSwipeButton buttonWithTitle:@"More" backgroundColor:[UIColor lightGrayColor]]];
+    cell.rightSwipeSettings.transition = MGSwipeTransition3D;
+
+    
+//    if ([workouts[@"completed"] boolValue]) {
+//        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+//    } else {
+//        cell.accessoryType = UITableViewCellAccessoryNone;
+//    }
 
     //    NSLog(@"cell.textLabel.text %@", cell.textLabel.text);
     
@@ -119,22 +133,22 @@
 #pragma mark - Table View delegate
 
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSInteger index = [self itemIndexForIndexPath:indexPath];
-    
-    
-    NSMutableDictionary *item = [self.workouts[index] mutableCopy];
-    BOOL completed = [item[@"completed"] boolValue];
-    item[@"completed"] = @(!completed);
-    
-    self.workouts[indexPath.row] = item;
-    
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    cell.accessoryType = ([item[@"completed"] boolValue]) ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
-    
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    NSInteger index = [self itemIndexForIndexPath:indexPath];
+//    
+//    
+//    NSMutableDictionary *item = [self.workouts[index] mutableCopy];
+//    BOOL completed = [item[@"completed"] boolValue];
+//    item[@"completed"] = @(!completed);
+//    
+//    self.workouts[indexPath.row] = item;
+//    
+//    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    cell.accessoryType = ([item[@"completed"] boolValue]) ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+//    
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    
+//}
 
 
 

@@ -450,7 +450,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="workoutrow" textLabel="OJq-uU-qVM" detailTextLabel="DSk-qJ-Ltb" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="Cz0-l6-0GB">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="workoutrow" textLabel="OJq-uU-qVM" detailTextLabel="DSk-qJ-Ltb" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="Cz0-l6-0GB" customClass="MGSwipeTableCell">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cz0-l6-0GB" id="3AJ-Dr-H8w">
@@ -573,7 +573,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="workoutrow" textLabel="h69-j3-jmT" detailTextLabel="aON-Vp-6kf" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="IoC-sk-Naq">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="workoutrow" textLabel="h69-j3-jmT" detailTextLabel="aON-Vp-6kf" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="IoC-sk-Naq" customClass="MGSwipeTableCell">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IoC-sk-Naq" id="R0I-a0-bDU">
@@ -697,7 +697,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="workoutrow" textLabel="UBt-GC-9wC" detailTextLabel="ZzS-sF-QfA" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="3iC-fC-56a">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="workoutrow" textLabel="UBt-GC-9wC" detailTextLabel="ZzS-sF-QfA" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="3iC-fC-56a" customClass="MGSwipeTableCell">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3iC-fC-56a" id="0Rs-Zq-Yjo">
@@ -749,7 +749,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="workoutrow" textLabel="20B-Sx-xm9" detailTextLabel="leK-GA-8ei" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="goC-p2-d3K">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="workoutrow" textLabel="20B-Sx-xm9" detailTextLabel="leK-GA-8ei" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="goC-p2-d3K" customClass="MGSwipeTableCell">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="goC-p2-d3K" id="iMc-V1-mmv">
