@@ -12,4 +12,6 @@ Workout Tracker app for iOS
 
   libraries used
     - SWRevealViewController(slide out menu bar)
+    - MGSwipeTableCell
+    - Realm Database Framework
     
