@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA3B0D591B93D9FC00321F20 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D581B93D9FC00321F20 /* Singleton.m */; };
+		EA3B0D5F1B94E21200321F20 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D5C1B94E21200321F20 /* MGSwipeButton.m */; };
+		EA3B0D601B94E21200321F20 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D5E1B94E21200321F20 /* MGSwipeTableCell.m */; };
+		EA3B0D621BA1430800321F20 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3B0D611BA1430800321F20 /* Realm.framework */; };
+		EA3B0D641BA1432A00321F20 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3B0D631BA1432A00321F20 /* libc++.dylib */; };
 		EA6B6D801B65F0E30096E140 /* W7_9WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D7F1B65F0E30096E140 /* W7_9WorkoutViewController.m */; };
 		EA6B6D831B65F0F90096E140 /* W10_12WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D821B65F0F90096E140 /* W10_12WorkoutViewController.m */; };
 		EA6B6D871B65F2140096E140 /* W1_3WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D861B65F2140096E140 /* W1_3WorkoutViewController.m */; };
@@ -40,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA3B0D571B93D83A00321F20 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		EA3B0D581B93D9FC00321F20 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		EA3B0D5B1B94E21200321F20 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
+		EA3B0D5C1B94E21200321F20 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
+		EA3B0D5D1B94E21200321F20 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
+		EA3B0D5E1B94E21200321F20 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
+		EA3B0D611BA1430800321F20 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		EA3B0D631BA1432A00321F20 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		EA6B6D7E1B65F0E30096E140 /* W7_9WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W7_9WorkoutViewController.h; sourceTree = "<group>"; };
 		EA6B6D7F1B65F0E30096E140 /* W7_9WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W7_9WorkoutViewController.m; sourceTree = "<group>"; };
 		EA6B6D811B65F0F90096E140 /* W10_12WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W10_12WorkoutViewController.h; sourceTree = "<group>"; };
@@ -86,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3B0D641BA1432A00321F20 /* libc++.dylib in Frameworks */,
+				EA3B0D621BA1430800321F20 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +114,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA3B0D5A1B94E21200321F20 /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA3B0D5B1B94E21200321F20 /* MGSwipeButton.h */,
+				EA3B0D5C1B94E21200321F20 /* MGSwipeButton.m */,
+				EA3B0D5D1B94E21200321F20 /* MGSwipeTableCell.h */,
+				EA3B0D5E1B94E21200321F20 /* MGSwipeTableCell.m */,
+			);
+			name = MGSwipeTableCell;
+			path = "../../../Downloads/MGSwipeTableCell-master/MGSwipeTableCell";
+			sourceTree = "<group>";
+		};
 		EAD44C891B5DD19E004E0A69 = {
 			isa = PBXGroup;
 			children = (
+				EA3B0D631BA1432A00321F20 /* libc++.dylib */,
+				EA3B0D611BA1430800321F20 /* Realm.framework */,
 				EAD44C941B5DD19E004E0A69 /* FitMe */,
 				EAD44CAE1B5DD19E004E0A69 /* FitMeTests */,
 				EAD44C931B5DD19E004E0A69 /* Products */,
@@ -120,6 +149,7 @@
 		EAD44C941B5DD19E004E0A69 /* FitMe */ = {
 			isa = PBXGroup;
 			children = (
+				EA3B0D5A1B94E21200321F20 /* MGSwipeTableCell */,
 				EAD44CBE1B5DD38D004E0A69 /* SWRevealViewController */,
 				EAD44C991B5DD19E004E0A69 /* AppDelegate.h */,
 				EAD44C9A1B5DD19E004E0A69 /* AppDelegate.m */,
@@ -153,6 +183,8 @@
 				EA6B6D7F1B65F0E30096E140 /* W7_9WorkoutViewController.m */,
 				EA6B6D811B65F0F90096E140 /* W10_12WorkoutViewController.h */,
 				EA6B6D821B65F0F90096E140 /* W10_12WorkoutViewController.m */,
+				EA3B0D571B93D83A00321F20 /* Singleton.h */,
+				EA3B0D581B93D9FC00321F20 /* Singleton.m */,
 			);
 			path = FitMe;
 			sourceTree = "<group>";
@@ -293,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3B0D591B93D9FC00321F20 /* Singleton.m in Sources */,
 				EA6B6D8A1B65F2730096E140 /* W4_6WorkoutViewController.m in Sources */,
 				EAD44CC41B5DD436004E0A69 /* ExerciseViewController.m in Sources */,
 				EAD44C9E1B5DD19E004E0A69 /* ViewController.m in Sources */,
@@ -301,9 +334,11 @@
 				EAE419771B5F45EC00DFDE9E /* Week10_12ViewController.m in Sources */,
 				EAD44CC11B5DD420004E0A69 /* WorkoutViewController.m in Sources */,
 				EAD44C981B5DD19E004E0A69 /* main.m in Sources */,
+				EA3B0D601B94E21200321F20 /* MGSwipeTableCell.m in Sources */,
 				EAD44CBD1B5DD37C004E0A69 /* SWRevealViewController.m in Sources */,
 				EAE4196E1B5F420B00DFDE9E /* Week1_3ViewController.m in Sources */,
 				EA6B6D801B65F0E30096E140 /* W7_9WorkoutViewController.m in Sources */,
+				EA3B0D5F1B94E21200321F20 /* MGSwipeButton.m in Sources */,
 				EA6B6D871B65F2140096E140 /* W1_3WorkoutViewController.m in Sources */,
 				EAE419711B5F421C00DFDE9E /* Week4_6ViewController.m in Sources */,
 				EA6B6D831B65F0F90096E140 /* W10_12WorkoutViewController.m in Sources */,
@@ -436,6 +471,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FitMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -447,6 +487,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FitMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -10,6 +10,7 @@
 #import "SWRevealViewController.h"
 #import "MGSwipeTableCell.h"
 #import "MGSwipeButton.h"
+#import "Singleton.h"
 
 @interface W1_3WorkoutViewController ()
 
@@ -112,14 +113,22 @@
     cell.detailTextLabel.text = workouts[@"reps"];
     
     //configure left buttons
-    cell.leftButtons = @[[MGSwipeButton buttonWithTitle:@"A" backgroundColor:[UIColor greenColor]]];
+    cell.leftButtons = @[[MGSwipeButton buttonWithTitle:@"A" backgroundColor:[UIColor greenColor] callback:^BOOL(MGSwipeTableCell *sender) {
+        NSLog(@"place holder for storing finished workout");
+        return 0;
+    }]];
     cell.leftSwipeSettings.transition = MGSwipeTransition3D;
     
     
     
     //configure right buttons
-    cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"X" backgroundColor:[UIColor redColor]],
-                          [MGSwipeButton buttonWithTitle:@"More" backgroundColor:[UIColor lightGrayColor]]];
+    cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"X" backgroundColor:[UIColor redColor] callback:^BOOL(MGSwipeTableCell *sender) {
+        NSLog(@"place holder for storing finished workout");
+        return 0;
+    }],[MGSwipeButton buttonWithTitle:@"More" backgroundColor:[UIColor lightGrayColor]callback:^BOOL(MGSwipeTableCell *sender) {
+        NSLog(@"place holder for storing finished workout");
+        return 0;
+    }]];
     cell.rightSwipeSettings.transition = MGSwipeTransition3D;
     
     
@@ -144,6 +153,8 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     return self.days[section];
 }
+
+
 
 #pragma mark - Table View delegate
 

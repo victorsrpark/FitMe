@@ -8,7 +8,7 @@
 
 #import "Singleton.h"
 
-static Singleton* SingletonInstance;
+static Singleton* SingletonInstance = nil;
 
 @implementation Singleton
 
@@ -30,4 +30,6 @@ static Singleton* SingletonInstance;
     }
     return self;
 }
+
+
 @end
