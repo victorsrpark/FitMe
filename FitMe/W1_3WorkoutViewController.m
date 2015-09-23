@@ -29,8 +29,9 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = YES;
     
+    
     //self.finishedExercises = [[NSMutableArray alloc] init];
-    self.workouts = @[@{@"name" : @"SQUATS", @"days" : @"DAY 1", @"reps": @"15, 12, 10, 8, 6"}, @{@"name" : @"BENT OVER ROWS", @"days" : @"DAY 1", @"reps": @"12, 10, 8, 6, 6"}, @{@"name" : @"BENCH PRESS", @"days" : @"DAY 1", @"reps": @"15, 12, 10, 8, 6"}, @{@"name" : @"OVERHEAD PRESS", @"days" : @"DAY 1", @"reps": @"12, 10, 8, 6, 6"}, @{@"name" : @"EXTERNAL ROTATIONS", @"days" : @"DAY 1", @"reps": @"3 x 12"}, @{@"name" : @"SEATED CALF RAISES", @"days" : @"DAY 1", @"reps": @"3 x 15"}, @{@"name" : @"MOUNTAIN CLIMBERS", @"days" : @"DAY 1", @"reps": @"3 x 30 SECONDS"}, @{@"name" : @"PLANKS", @"days" : @"DAY 1", @"reps": @"3 x 30 SECONDS"}, @{@"name" : @"DEADLIFT", @"days" : @"DAY 2", @"reps": @"15, 12, 10, 8, 6"}, @{@"name" : @"KNEELING LANDMINE PRESS", @"days" : @"DAY 2", @"reps": @"15, 12, 10, 8, 8"}, @{@"name" : @"ALT. ARNOLD PRESS", @"days" : @"DAY 2", @"reps": @"12, 10, 8, 8, 6"}, @{@"name" : @"ALT. FRONT LUNGE", @"days" : @"DAY 2", @"reps": @"5 x 10"}, @{@"name" : @"PULL OVER", @"days" : @"DAY 2", @"reps": @"3 x 15"}, @{@"name" : @"WEIGHTED CRUNCHES", @"days" : @"DAY 2", @"reps": @"3 x 15"}, @{@"name" : @"SIDE PLANKS", @"days" : @"DAY 2", @"reps": @"3 x 30 SECONDS"}, @{@"name" : @"FRONT SQUAT", @"days" : @"DAY 3", @"reps": @"15, 12, 10, 8, 6"}, @{@"name" : @"T-BAR ROW", @"days" : @"DAY 3", @"reps": @"12, 10, 8, 8, 6"}, @{@"name" : @"DIPS", @"days" : @"DAY 3", @"reps": @"5 x 15"}, @{@"name" : @"UPRIGHT ROW", @"days" : @"DAY 3", @"reps": @"15, 12, 10, 8, 8"}, @{@"name" : @"GLUTE BRIDGES (WEIGHTED)", @"days" : @"DAY 3", @"reps": @"3 x 10"}, @{@"name" : @"STANDING CALF RAISES", @"days" : @"DAY 3", @"reps": @"3 x 15"}, @{@"name" : @"RUSSIAN TWIST", @"days" : @"DAY 3", @"reps": @"3 x 30 (15 EACH SIDE)"}].mutableCopy;
+    self.workouts = @[@{@"name" : @"SQUATS", @"days" : @"DAY 1", @"reps": @"15, 12, 10, 8, 6", @"body": @"quadriceps"}, @{@"name" : @"BENT OVER ROWS", @"days" : @"DAY 1", @"reps": @"12, 10, 8, 6, 6", @"body": @"back"}, @{@"name" : @"BENCH PRESS", @"days" : @"DAY 1", @"reps": @"15, 12, 10, 8, 6", @"body": @"chest"}, @{@"name" : @"OVERHEAD PRESS", @"days" : @"DAY 1", @"reps": @"12, 10, 8, 6, 6", @"body": @"shoulders"}, @{@"name" : @"EXTERNAL ROTATIONS", @"days" : @"DAY 1", @"reps": @"3 x 12", @"body": @"shoulders"}, @{@"name" : @"SEATED CALF RAISES", @"days" : @"DAY 1", @"reps": @"3 x 15", @"body": @"calf"}, @{@"name" : @"MOUNTAIN CLIMBERS", @"days" : @"DAY 1", @"reps": @"3 x 30 SECONDS", @"body": @"abs"}, @{@"name" : @"PLANKS", @"days" : @"DAY 1", @"reps": @"3 x 30 SECONDS", @"body": @"abs"}, @{@"name" : @"DEADLIFT", @"days" : @"DAY 2", @"reps": @"15, 12, 10, 8, 6", @"body": @"back"}, @{@"name" : @"KNEELING LANDMINE PRESS", @"days" : @"DAY 2", @"reps": @"15, 12, 10, 8, 8", @"body": @"chest"}, @{@"name" : @"ALT. ARNOLD PRESS", @"days" : @"DAY 2", @"reps": @"12, 10, 8, 8, 6", @"body": @"shoulders"}, @{@"name" : @"ALT. FRONT LUNGE", @"days" : @"DAY 2", @"reps": @"5 x 10", @"body": @"quadriceps"}, @{@"name" : @"PULL OVER", @"days" : @"DAY 2", @"reps": @"3 x 15", @"body": @"chest"}, @{@"name" : @"WEIGHTED CRUNCHES", @"days" : @"DAY 2", @"reps": @"3 x 15", @"body": @"abs"}, @{@"name" : @"SIDE PLANKS", @"days" : @"DAY 2", @"reps": @"3 x 30 SECONDS", @"body": @"abs"}, @{@"name" : @"FRONT SQUAT", @"days" : @"DAY 3", @"reps": @"15, 12, 10, 8, 6", @"body": @"quadriceps"}, @{@"name" : @"T-BAR ROW", @"days" : @"DAY 3", @"reps": @"12, 10, 8, 8, 6", @"body": @"back"}, @{@"name" : @"DIPS", @"days" : @"DAY 3", @"reps": @"5 x 15", @"body": @"chest"}, @{@"name" : @"UPRIGHT ROW", @"days" : @"DAY 3", @"reps": @"15, 12, 10, 8, 8", @"body": @"shoulers"}, @{@"name" : @"GLUTE BRIDGES (WEIGHTED)", @"days" : @"DAY 3", @"reps": @"3 x 10", @"body": @"glute"}, @{@"name" : @"STANDING CALF RAISES", @"days" : @"DAY 3", @"reps": @"3 x 15", @"body": @"calf"}, @{@"name" : @"RUSSIAN TWIST", @"days" : @"DAY 3", @"reps": @"3 x 30 (15 EACH SIDE)", @"body": @"abs"}].mutableCopy;
     
     //    self.reps = @[@"15, 12, 10, 8, 6", @"12, 10, 8, 6, 6", , @"12, 10, 8, 6, 6", @"3 x 12", @"3 x 15", @"3 x 30 SECONDS", @"3 x 30 SECONDS", @"15, 12, 10, 8, 6", @"15, 12, 10, 8, 8", @"12, 10, 8, 8, 6", @"5 x 10", @"3 x 15", @"3 x 15", @"3 x 30 SECONDS", @"15, 12, 10, 8, 6", @"12, 10, 8, 8, 6", @"5 x 15", @"15, 12, 10, 8, 8", @"3 x 10", @"3 x 15", @"3 x 30 (15 EACH SIDE)"];
     self.days = @[@"DAY 1", @"DAY 2", @"DAY 3"];
@@ -95,6 +96,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    NSUserDefaults * standardUserDefaults = [NSUserDefaults standardUserDefaults];
+
+    
     static NSString *CellIdentifier = @"workoutrow";
     MGSwipeTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
@@ -114,7 +118,8 @@
     
     //configure left buttons
     cell.leftButtons = @[[MGSwipeButton buttonWithTitle:@"A" backgroundColor:[UIColor greenColor] callback:^BOOL(MGSwipeTableCell *sender) {
-        NSLog(@"place holder for storing finished workout");
+        [standardUserDefaults setObject:workouts[@"body"] forKey:@"finished"];
+        [standardUserDefaults synchronize];
         return 0;
     }]];
     cell.leftSwipeSettings.transition = MGSwipeTransition3D;
@@ -123,7 +128,8 @@
     
     //configure right buttons
     cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"X" backgroundColor:[UIColor redColor] callback:^BOOL(MGSwipeTableCell *sender) {
-        NSLog(@"place holder for storing finished workout");
+        [standardUserDefaults setObject:workouts[@"body"] forKey:@"unfinished"];
+        [standardUserDefaults synchronize];
         return 0;
     }],[MGSwipeButton buttonWithTitle:@"More" backgroundColor:[UIColor lightGrayColor]callback:^BOOL(MGSwipeTableCell *sender) {
         NSLog(@"place holder for storing finished workout");

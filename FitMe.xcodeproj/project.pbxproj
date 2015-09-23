@@ -10,8 +10,6 @@
 		EA3B0D591B93D9FC00321F20 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D581B93D9FC00321F20 /* Singleton.m */; };
 		EA3B0D5F1B94E21200321F20 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D5C1B94E21200321F20 /* MGSwipeButton.m */; };
 		EA3B0D601B94E21200321F20 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D5E1B94E21200321F20 /* MGSwipeTableCell.m */; };
-		EA3B0D621BA1430800321F20 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3B0D611BA1430800321F20 /* Realm.framework */; };
-		EA3B0D641BA1432A00321F20 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3B0D631BA1432A00321F20 /* libc++.dylib */; };
 		EA6B6D801B65F0E30096E140 /* W7_9WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D7F1B65F0E30096E140 /* W7_9WorkoutViewController.m */; };
 		EA6B6D831B65F0F90096E140 /* W10_12WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D821B65F0F90096E140 /* W10_12WorkoutViewController.m */; };
 		EA6B6D871B65F2140096E140 /* W1_3WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D861B65F2140096E140 /* W1_3WorkoutViewController.m */; };
@@ -51,8 +49,6 @@
 		EA3B0D5C1B94E21200321F20 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
 		EA3B0D5D1B94E21200321F20 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
 		EA3B0D5E1B94E21200321F20 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
-		EA3B0D611BA1430800321F20 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		EA3B0D631BA1432A00321F20 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		EA6B6D7E1B65F0E30096E140 /* W7_9WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W7_9WorkoutViewController.h; sourceTree = "<group>"; };
 		EA6B6D7F1B65F0E30096E140 /* W7_9WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W7_9WorkoutViewController.m; sourceTree = "<group>"; };
 		EA6B6D811B65F0F90096E140 /* W10_12WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W10_12WorkoutViewController.h; sourceTree = "<group>"; };
@@ -99,8 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA3B0D641BA1432A00321F20 /* libc++.dylib in Frameworks */,
-				EA3B0D621BA1430800321F20 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,8 +123,6 @@
 		EAD44C891B5DD19E004E0A69 = {
 			isa = PBXGroup;
 			children = (
-				EA3B0D631BA1432A00321F20 /* libc++.dylib */,
-				EA3B0D611BA1430800321F20 /* Realm.framework */,
 				EAD44C941B5DD19E004E0A69 /* FitMe */,
 				EAD44CAE1B5DD19E004E0A69 /* FitMeTests */,
 				EAD44C931B5DD19E004E0A69 /* Products */,
