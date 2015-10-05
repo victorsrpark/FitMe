@@ -51,7 +51,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"WorkoutSegue" sender:self];
+    if (indexPath.row == 1) {
+        [self performSegueWithIdentifier:@"WorkoutSegue" sender:self];
+    }
+    else if (indexPath.row == 4){
+        [self performSegueWithIdentifier:@"ResultSegue" sender:self];
+    }
+    
+    
 }
 
 

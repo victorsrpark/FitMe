@@ -107,8 +107,44 @@
     cell.detailTextLabel.text = workouts[@"reps"];
     
     //configure left buttons
-    cell.leftButtons = @[[MGSwipeButton buttonWithTitle:@"A" backgroundColor:[UIColor greenColor] callback:^BOOL(MGSwipeTableCell *sender) {
-        [standardUserDefaults setObject:workouts[@"body"] forKey:@"finished"];
+    cell.leftButtons = @[[MGSwipeButton buttonWithTitle:@"Y" backgroundColor:[UIColor greenColor] callback:^BOOL(MGSwipeTableCell *sender) {
+        if ([workouts[@"body"] isEqualToString:@"chest"]) {
+            if (![standardUserDefaults integerForKey:@"chestfinished"]) {
+                [standardUserDefaults setInteger:1  forKey:@"chestfinished"];
+            } else{
+                [standardUserDefaults setInteger:[standardUserDefaults integerForKey:@"chestfinished"] + 1 forKey:@"chestfinished"];
+            }
+        }else if ([workouts[@"body"] isEqualToString:@"shoulders"]) {
+            if (![standardUserDefaults integerForKey:@"shouldersfinished"]) {
+                [standardUserDefaults setInteger:1  forKey:@"shouldersfinished"];
+            } else{
+                [standardUserDefaults setInteger:[standardUserDefaults integerForKey:@"shouldersfinished"] + 1 forKey:@"shouldersfinished"];
+            }
+        }else if ([workouts[@"body"] isEqualToString:@"back"] || [workouts[@"body"] isEqualToString:@"traps"]) {
+            if (![standardUserDefaults integerForKey:@"backfinished"]) {
+                [standardUserDefaults setInteger:1  forKey:@"backfinished"];
+            } else{
+                [standardUserDefaults setInteger:[standardUserDefaults integerForKey:@"backfinished"] + 1 forKey:@"backfinished"];
+            }
+        }else if ([workouts[@"body"] isEqualToString:@"glute"] || [workouts[@"body"] isEqualToString:@"quadriceps"] || [workouts[@"body"] isEqualToString:@"calf"]) {
+            if (![standardUserDefaults integerForKey:@"lowerbodyfinished"]) {
+                [standardUserDefaults setInteger:1  forKey:@"lowerbodyfinished"];
+            } else{
+                [standardUserDefaults setInteger:[standardUserDefaults integerForKey:@"lowerbodyfinished"] + 1 forKey:@"lowerbodyfinished"];
+            }
+        }else if ([workouts[@"body"] isEqualToString:@"abs"]) {
+            if (![standardUserDefaults integerForKey:@"absfinished"]) {
+                [standardUserDefaults setInteger:1  forKey:@"absfinished"];
+            } else{
+                [standardUserDefaults setInteger:[standardUserDefaults integerForKey:@"absfinished"] + 1 forKey:@"absfinished"];
+            }
+        }else if ([workouts[@"body"] isEqualToString:@"biceps"] || [workouts[@"body"] isEqualToString:@"triceps"] || [workouts[@"body"] isEqualToString:@"fore-arms"]) {
+            if (![standardUserDefaults integerForKey:@"armsfinished"]) {
+                [standardUserDefaults setInteger:1  forKey:@"armsfinished"];
+            } else{
+                [standardUserDefaults setInteger:[standardUserDefaults integerForKey:@"armsfinished"] + 1 forKey:@"armsfinished"];
+            }
+        }
         [standardUserDefaults synchronize];
         return 0;
     }]];
@@ -118,7 +154,43 @@
     
     //configure right buttons
     cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"X" backgroundColor:[UIColor redColor] callback:^BOOL(MGSwipeTableCell *sender) {
-        [standardUserDefaults setObject:workouts[@"body"] forKey:@"unfinished"];
+        if ([workouts[@"body"] isEqualToString:@"chest"]) {
+            if (![standardUserDefaults integerForKey:@"chestunfinished"]) {
+                [standardUserDefaults setInteger:1  forKey:@"chestunfinished"];
+            } else{
+                [standardUserDefaults setInteger:[standardUserDefaults integerForKey:@"chestunfinished"] + 1 forKey:@"chestunfinished"];
+            }
+        }else if ([workouts[@"body"] isEqualToString:@"shoulders"]) {
+            if (![standardUserDefaults integerForKey:@"shouldersunfinished"]) {
+                [standardUserDefaults setInteger:1  forKey:@"shouldersunfinished"];
+            } else{
+                [standardUserDefaults setInteger:[standardUserDefaults integerForKey:@"shouldersunfinished"] + 1 forKey:@"shouldersunfinished"];
+            }
+        }else if ([workouts[@"body"] isEqualToString:@"back"] || [workouts[@"body"] isEqualToString:@"traps"]) {
+            if (![standardUserDefaults integerForKey:@"backunfinished"]) {
+                [standardUserDefaults setInteger:1  forKey:@"backunfinished"];
+            } else{
+                [standardUserDefaults setInteger:[standardUserDefaults integerForKey:@"backunfinished"] + 1 forKey:@"backunfinished"];
+            }
+        }else if ([workouts[@"body"] isEqualToString:@"glute"] || [workouts[@"body"] isEqualToString:@"quadriceps"] || [workouts[@"body"] isEqualToString:@"calf"]) {
+            if (![standardUserDefaults integerForKey:@"lowerbodyunfinished"]) {
+                [standardUserDefaults setInteger:1  forKey:@"lowerbodyunfinished"];
+            } else{
+                [standardUserDefaults setInteger:[standardUserDefaults integerForKey:@"lowerbodyunfinished"] + 1 forKey:@"lowerbodyunfinished"];
+            }
+        }else if ([workouts[@"body"] isEqualToString:@"abs"]) {
+            if (![standardUserDefaults integerForKey:@"absunfinished"]) {
+                [standardUserDefaults setInteger:1  forKey:@"absunfinished"];
+            } else{
+                [standardUserDefaults setInteger:[standardUserDefaults integerForKey:@"absunfinished"] + 1 forKey:@"absunfinished"];
+            }
+        }else if ([workouts[@"body"] isEqualToString:@"biceps"] || [workouts[@"body"] isEqualToString:@"triceps"] || [workouts[@"body"] isEqualToString:@"fore-arms"]) {
+            if (![standardUserDefaults integerForKey:@"armsunfinished"]) {
+                [standardUserDefaults setInteger:1  forKey:@"armsunfinished"];
+            } else{
+                [standardUserDefaults setInteger:[standardUserDefaults integerForKey:@"armsunfinished"] + 1 forKey:@"armsunfinished"];
+            }
+        }
         [standardUserDefaults synchronize];
         return 0;
     }],[MGSwipeButton buttonWithTitle:@"More" backgroundColor:[UIColor lightGrayColor]callback:^BOOL(MGSwipeTableCell *sender) {

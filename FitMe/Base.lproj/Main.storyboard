@@ -27,6 +27,79 @@
             </objects>
             <point key="canvasLocation" x="-188.5" y="-328.5"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qaH-Xo-2yP">
+            <objects>
+                <navigationController id="eLP-YG-faS" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eN5-NY-u4v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nze-wK-M47" kind="relationship" relationship="rootViewController" id="rEz-Ta-q3p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RQn-rb-aPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.5" y="1640.5"/>
+        </scene>
+        <!--result-->
+        <scene sceneID="tU6-Qz-5IA">
+            <objects>
+                <viewController id="nze-wK-M47" customClass="ResultViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qnm-6T-wZa"/>
+                        <viewControllerLayoutGuide type="bottom" id="t2n-Hd-lUS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d2o-t7-1na">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNO-RZ-gmc">
+                                <rect key="frame" x="168" y="617" width="39" height="30"/>
+                                <state key="normal" title="Show">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resultButton:" destination="nze-wK-M47" eventType="touchUpInside" id="Nm9-1O-Boq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chest.png" translatesAutoresizingMaskIntoConstraints="NO" id="MWc-b1-oj6">
+                                <rect key="frame" x="16" y="64" width="158" height="158"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fl5-wa-gTI">
+                                <rect key="frame" x="16" y="230" width="156" height="166"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arms.png" translatesAutoresizingMaskIntoConstraints="NO" id="NGJ-9a-BU2">
+                                <rect key="frame" x="206" y="230" width="158" height="166"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abs.png" translatesAutoresizingMaskIntoConstraints="NO" id="Smb-Mu-D2N">
+                                <rect key="frame" x="16" y="404" width="156" height="155"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lowerbody.png" translatesAutoresizingMaskIntoConstraints="NO" id="IbL-V1-mlw">
+                                <rect key="frame" x="206" y="404" width="158" height="155"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shoulders.png" translatesAutoresizingMaskIntoConstraints="NO" id="FJb-0J-ARU">
+                                <rect key="frame" x="203" y="64" width="156" height="158"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="result" id="Ezx-cU-Ul6"/>
+                    <connections>
+                        <outlet property="absImageView" destination="Smb-Mu-D2N" id="yL2-cp-rpf"/>
+                        <outlet property="armsImageView" destination="NGJ-9a-BU2" id="Hs1-vV-gWh"/>
+                        <outlet property="backImageView" destination="Fl5-wa-gTI" id="EPX-Qd-nSJ"/>
+                        <outlet property="chestImageView" destination="MWc-b1-oj6" id="nYp-yr-ipz"/>
+                        <outlet property="lowerbodyImageView" destination="IbL-V1-mlw" id="FZs-pd-0F2"/>
+                        <outlet property="shoulderImageView" destination="FJb-0J-ARU" id="Ewg-B0-acZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vTv-hI-FjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635.5" y="1640.5"/>
+        </scene>
         <!--Exercise View Controller-->
         <scene sceneID="SCK-Se-hbh">
             <objects>
@@ -128,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwh-jl-Lyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900.5" y="1246.5"/>
+            <point key="canvasLocation" x="890.5" y="912.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UWP-wf-66S">
@@ -328,6 +401,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="eLP-YG-faS" kind="custom" identifier="ResultSegue" customClass="SWRevealViewControllerSeguePushController" id="Gf7-4a-JTY"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -339,7 +415,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dbr-Ej-pN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-70.5" y="603.5"/>
+            <point key="canvasLocation" x="-202.5" y="689.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Hh-37-Kpg">
@@ -358,7 +434,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2UW-d4-lWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="485.5" y="1246.5"/>
+            <point key="canvasLocation" x="451.5" y="838.5"/>
         </scene>
         <!--Week13 View Controller-->
         <scene sceneID="Chz-Ru-K9g">
@@ -859,7 +935,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="abs.png" width="263" height="240"/>
+        <image name="arms.png" width="531" height="582"/>
+        <image name="back.png" width="625" height="560"/>
+        <image name="chest.png" width="602" height="579"/>
+        <image name="lowerbody.png" width="539" height="577"/>
         <image name="menu" width="22" height="22"/>
+        <image name="shoulders.png" width="606" height="580"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="psq-1X-UUx"/>

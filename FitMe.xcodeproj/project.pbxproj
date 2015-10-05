@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA1A3C281BB371E8006B4980 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1A3C271BB371E8006B4980 /* ResultViewController.m */; };
 		EA3B0D591B93D9FC00321F20 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D581B93D9FC00321F20 /* Singleton.m */; };
 		EA3B0D5F1B94E21200321F20 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D5C1B94E21200321F20 /* MGSwipeButton.m */; };
 		EA3B0D601B94E21200321F20 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D5E1B94E21200321F20 /* MGSwipeTableCell.m */; };
@@ -14,6 +15,12 @@
 		EA6B6D831B65F0F90096E140 /* W10_12WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D821B65F0F90096E140 /* W10_12WorkoutViewController.m */; };
 		EA6B6D871B65F2140096E140 /* W1_3WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D861B65F2140096E140 /* W1_3WorkoutViewController.m */; };
 		EA6B6D8A1B65F2730096E140 /* W4_6WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D891B65F2730096E140 /* W4_6WorkoutViewController.m */; };
+		EAACAC251BB8A9A300579225 /* abs.png in Resources */ = {isa = PBXBuildFile; fileRef = EAACAC1F1BB8A9A300579225 /* abs.png */; };
+		EAACAC261BB8A9A300579225 /* arms.png in Resources */ = {isa = PBXBuildFile; fileRef = EAACAC201BB8A9A300579225 /* arms.png */; };
+		EAACAC271BB8A9A300579225 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = EAACAC211BB8A9A300579225 /* back.png */; };
+		EAACAC281BB8A9A300579225 /* chest.png in Resources */ = {isa = PBXBuildFile; fileRef = EAACAC221BB8A9A300579225 /* chest.png */; };
+		EAACAC291BB8A9A300579225 /* lowerbody.png in Resources */ = {isa = PBXBuildFile; fileRef = EAACAC231BB8A9A300579225 /* lowerbody.png */; };
+		EAACAC2A1BB8A9A300579225 /* shoulders.png in Resources */ = {isa = PBXBuildFile; fileRef = EAACAC241BB8A9A300579225 /* shoulders.png */; };
 		EAD44C981B5DD19E004E0A69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44C971B5DD19E004E0A69 /* main.m */; };
 		EAD44C9B1B5DD19E004E0A69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44C9A1B5DD19E004E0A69 /* AppDelegate.m */; };
 		EAD44C9E1B5DD19E004E0A69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44C9D1B5DD19E004E0A69 /* ViewController.m */; };
@@ -43,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA1A3C271BB371E8006B4980 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		EA1A3C291BB371FD006B4980 /* ResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
 		EA3B0D571B93D83A00321F20 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		EA3B0D581B93D9FC00321F20 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		EA3B0D5B1B94E21200321F20 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
@@ -57,6 +66,12 @@
 		EA6B6D861B65F2140096E140 /* W1_3WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W1_3WorkoutViewController.m; sourceTree = "<group>"; };
 		EA6B6D881B65F2730096E140 /* W4_6WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W4_6WorkoutViewController.h; sourceTree = "<group>"; };
 		EA6B6D891B65F2730096E140 /* W4_6WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W4_6WorkoutViewController.m; sourceTree = "<group>"; };
+		EAACAC1F1BB8A9A300579225 /* abs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abs.png; sourceTree = "<group>"; };
+		EAACAC201BB8A9A300579225 /* arms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arms.png; sourceTree = "<group>"; };
+		EAACAC211BB8A9A300579225 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		EAACAC221BB8A9A300579225 /* chest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chest.png; sourceTree = "<group>"; };
+		EAACAC231BB8A9A300579225 /* lowerbody.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lowerbody.png; sourceTree = "<group>"; };
+		EAACAC241BB8A9A300579225 /* shoulders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoulders.png; sourceTree = "<group>"; };
 		EAD44C921B5DD19E004E0A69 /* FitMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD44C961B5DD19E004E0A69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAD44C971B5DD19E004E0A69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,6 +135,19 @@
 			path = "../../../Downloads/MGSwipeTableCell-master/MGSwipeTableCell";
 			sourceTree = "<group>";
 		};
+		EAACAC1E1BB8A99500579225 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EAACAC1F1BB8A9A300579225 /* abs.png */,
+				EAACAC201BB8A9A300579225 /* arms.png */,
+				EAACAC211BB8A9A300579225 /* back.png */,
+				EAACAC221BB8A9A300579225 /* chest.png */,
+				EAACAC231BB8A9A300579225 /* lowerbody.png */,
+				EAACAC241BB8A9A300579225 /* shoulders.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		EAD44C891B5DD19E004E0A69 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +169,7 @@
 		EAD44C941B5DD19E004E0A69 /* FitMe */ = {
 			isa = PBXGroup;
 			children = (
+				EAACAC1E1BB8A99500579225 /* images */,
 				EA3B0D5A1B94E21200321F20 /* MGSwipeTableCell */,
 				EAD44CBE1B5DD38D004E0A69 /* SWRevealViewController */,
 				EAD44C991B5DD19E004E0A69 /* AppDelegate.h */,
@@ -177,6 +206,8 @@
 				EA6B6D821B65F0F90096E140 /* W10_12WorkoutViewController.m */,
 				EA3B0D571B93D83A00321F20 /* Singleton.h */,
 				EA3B0D581B93D9FC00321F20 /* Singleton.m */,
+				EA1A3C291BB371FD006B4980 /* ResultViewController.h */,
+				EA1A3C271BB371E8006B4980 /* ResultViewController.m */,
 			);
 			path = FitMe;
 			sourceTree = "<group>";
@@ -297,9 +328,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAACAC251BB8A9A300579225 /* abs.png in Resources */,
+				EAACAC261BB8A9A300579225 /* arms.png in Resources */,
+				EAACAC271BB8A9A300579225 /* back.png in Resources */,
 				EAD44CA11B5DD19E004E0A69 /* Main.storyboard in Resources */,
 				EAD44CA61B5DD19E004E0A69 /* LaunchScreen.xib in Resources */,
+				EAACAC281BB8A9A300579225 /* chest.png in Resources */,
 				EAD44CA31B5DD19E004E0A69 /* Images.xcassets in Resources */,
+				EAACAC291BB8A9A300579225 /* lowerbody.png in Resources */,
+				EAACAC2A1BB8A9A300579225 /* shoulders.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +357,7 @@
 				EA3B0D591B93D9FC00321F20 /* Singleton.m in Sources */,
 				EA6B6D8A1B65F2730096E140 /* W4_6WorkoutViewController.m in Sources */,
 				EAD44CC41B5DD436004E0A69 /* ExerciseViewController.m in Sources */,
+				EA1A3C281BB371E8006B4980 /* ResultViewController.m in Sources */,
 				EAD44C9E1B5DD19E004E0A69 /* ViewController.m in Sources */,
 				EAD44C9B1B5DD19E004E0A69 /* AppDelegate.m in Sources */,
 				EAD44CCA1B5DD463004E0A69 /* MainViewController.m in Sources */,
