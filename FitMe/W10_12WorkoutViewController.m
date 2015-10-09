@@ -10,7 +10,6 @@
 #import "SWRevealViewController.h"
 #import "MGSwipeTableCell.h"
 #import "MGSwipeButton.h"
-#import "Singleton.h"
 
 @interface W10_12WorkoutViewController ()
 

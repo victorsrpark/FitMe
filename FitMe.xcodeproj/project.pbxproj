@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA1A3C281BB371E8006B4980 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1A3C271BB371E8006B4980 /* ResultViewController.m */; };
-		EA3B0D591B93D9FC00321F20 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D581B93D9FC00321F20 /* Singleton.m */; };
+		EA1A3C281BB371E8006B4980 /* WorkoutResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1A3C271BB371E8006B4980 /* WorkoutResultViewController.m */; };
 		EA3B0D5F1B94E21200321F20 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D5C1B94E21200321F20 /* MGSwipeButton.m */; };
 		EA3B0D601B94E21200321F20 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D5E1B94E21200321F20 /* MGSwipeTableCell.m */; };
 		EA6B6D801B65F0E30096E140 /* W7_9WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D7F1B65F0E30096E140 /* W7_9WorkoutViewController.m */; };
@@ -50,10 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EA1A3C271BB371E8006B4980 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
-		EA1A3C291BB371FD006B4980 /* ResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
-		EA3B0D571B93D83A00321F20 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
-		EA3B0D581B93D9FC00321F20 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		EA1A3C271BB371E8006B4980 /* WorkoutResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutResultViewController.m; sourceTree = "<group>"; };
+		EA1A3C291BB371FD006B4980 /* WorkoutResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkoutResultViewController.h; sourceTree = "<group>"; };
 		EA3B0D5B1B94E21200321F20 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
 		EA3B0D5C1B94E21200321F20 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
 		EA3B0D5D1B94E21200321F20 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
@@ -204,10 +201,8 @@
 				EA6B6D7F1B65F0E30096E140 /* W7_9WorkoutViewController.m */,
 				EA6B6D811B65F0F90096E140 /* W10_12WorkoutViewController.h */,
 				EA6B6D821B65F0F90096E140 /* W10_12WorkoutViewController.m */,
-				EA3B0D571B93D83A00321F20 /* Singleton.h */,
-				EA3B0D581B93D9FC00321F20 /* Singleton.m */,
-				EA1A3C291BB371FD006B4980 /* ResultViewController.h */,
-				EA1A3C271BB371E8006B4980 /* ResultViewController.m */,
+				EA1A3C291BB371FD006B4980 /* WorkoutResultViewController.h */,
+				EA1A3C271BB371E8006B4980 /* WorkoutResultViewController.m */,
 			);
 			path = FitMe;
 			sourceTree = "<group>";
@@ -354,10 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA3B0D591B93D9FC00321F20 /* Singleton.m in Sources */,
 				EA6B6D8A1B65F2730096E140 /* W4_6WorkoutViewController.m in Sources */,
 				EAD44CC41B5DD436004E0A69 /* ExerciseViewController.m in Sources */,
-				EA1A3C281BB371E8006B4980 /* ResultViewController.m in Sources */,
+				EA1A3C281BB371E8006B4980 /* WorkoutResultViewController.m in Sources */,
 				EAD44C9E1B5DD19E004E0A69 /* ViewController.m in Sources */,
 				EAD44C9B1B5DD19E004E0A69 /* AppDelegate.m in Sources */,
 				EAD44CCA1B5DD463004E0A69 /* MainViewController.m in Sources */,

@@ -54,9 +54,7 @@
     if (indexPath.row == 1) {
         [self performSegueWithIdentifier:@"WorkoutSegue" sender:self];
     }
-    else if (indexPath.row == 4){
-        [self performSegueWithIdentifier:@"ResultSegue" sender:self];
-    }
+
     
     
 }
@@ -65,18 +63,18 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    // Set the title of navigation bar by using the menu items
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
-    destViewController.title = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
-    
-    // Set the photo if it navigates to the PhotoView
-    if ([segue.identifier isEqualToString:@"MainView"]) {
-        [self performSegueWithIdentifier:@"MainView" sender:nil];
-    }
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    
+//    // Set the title of navigation bar by using the menu items
+//    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//    UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
+//    destViewController.title = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
+//    
+//    // Set the photo if it navigates to the PhotoView
+//    if ([segue.identifier isEqualToString:@"MainView"]) {
+//        [self performSegueWithIdentifier:@"MainView" sender:nil];
+//    }
+//}
 
 
 @end
