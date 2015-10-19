@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExerciseViewController : UIViewController
+@interface ExerciseTutorialViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 @property (strong, nonatomic) NSString *photoFilename;

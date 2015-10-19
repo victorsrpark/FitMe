@@ -10,6 +10,8 @@
 		EA1A3C281BB371E8006B4980 /* WorkoutResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1A3C271BB371E8006B4980 /* WorkoutResultViewController.m */; };
 		EA3B0D5F1B94E21200321F20 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D5C1B94E21200321F20 /* MGSwipeButton.m */; };
 		EA3B0D601B94E21200321F20 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B0D5E1B94E21200321F20 /* MGSwipeTableCell.m */; };
+		EA56F5751BC73E5C003217A6 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = EA56F5711BC73E5C003217A6 /* YTPlayerView-iframe-player.html */; };
+		EA56F5761BC73E5C003217A6 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA56F5741BC73E5C003217A6 /* YTPlayerView.m */; };
 		EA6B6D801B65F0E30096E140 /* W7_9WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D7F1B65F0E30096E140 /* W7_9WorkoutViewController.m */; };
 		EA6B6D831B65F0F90096E140 /* W10_12WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D821B65F0F90096E140 /* W10_12WorkoutViewController.m */; };
 		EA6B6D871B65F2140096E140 /* W1_3WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6B6D861B65F2140096E140 /* W1_3WorkoutViewController.m */; };
@@ -29,7 +31,7 @@
 		EAD44CB21B5DD19E004E0A69 /* FitMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CB11B5DD19E004E0A69 /* FitMeTests.m */; };
 		EAD44CBD1B5DD37C004E0A69 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CBC1B5DD37C004E0A69 /* SWRevealViewController.m */; };
 		EAD44CC11B5DD420004E0A69 /* WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CC01B5DD420004E0A69 /* WorkoutViewController.m */; };
-		EAD44CC41B5DD436004E0A69 /* ExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CC31B5DD436004E0A69 /* ExerciseViewController.m */; };
+		EAD44CC41B5DD436004E0A69 /* ExerciseTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CC31B5DD436004E0A69 /* ExerciseTutorialViewController.m */; };
 		EAD44CC71B5DD454004E0A69 /* SidebarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CC61B5DD454004E0A69 /* SidebarTableViewController.m */; };
 		EAD44CCA1B5DD463004E0A69 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD44CC91B5DD463004E0A69 /* MainViewController.m */; };
 		EAE4196E1B5F420B00DFDE9E /* Week1_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4196D1B5F420B00DFDE9E /* Week1_3ViewController.m */; };
@@ -55,6 +57,9 @@
 		EA3B0D5C1B94E21200321F20 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
 		EA3B0D5D1B94E21200321F20 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
 		EA3B0D5E1B94E21200321F20 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
+		EA56F5711BC73E5C003217A6 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
+		EA56F5731BC73E5C003217A6 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		EA56F5741BC73E5C003217A6 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 		EA6B6D7E1B65F0E30096E140 /* W7_9WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W7_9WorkoutViewController.h; sourceTree = "<group>"; };
 		EA6B6D7F1B65F0E30096E140 /* W7_9WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W7_9WorkoutViewController.m; sourceTree = "<group>"; };
 		EA6B6D811B65F0F90096E140 /* W10_12WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W10_12WorkoutViewController.h; sourceTree = "<group>"; };
@@ -86,8 +91,8 @@
 		EAD44CBC1B5DD37C004E0A69 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../Downloads/Slideout-Sidebar-Demo-master/SidebarDemo/SWRevealViewController.m"; sourceTree = "<group>"; };
 		EAD44CBF1B5DD420004E0A69 /* WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutViewController.h; sourceTree = "<group>"; };
 		EAD44CC01B5DD420004E0A69 /* WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutViewController.m; sourceTree = "<group>"; };
-		EAD44CC21B5DD436004E0A69 /* ExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseViewController.h; sourceTree = "<group>"; };
-		EAD44CC31B5DD436004E0A69 /* ExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseViewController.m; sourceTree = "<group>"; };
+		EAD44CC21B5DD436004E0A69 /* ExerciseTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTutorialViewController.h; sourceTree = "<group>"; };
+		EAD44CC31B5DD436004E0A69 /* ExerciseTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTutorialViewController.m; sourceTree = "<group>"; };
 		EAD44CC51B5DD454004E0A69 /* SidebarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarTableViewController.h; sourceTree = "<group>"; };
 		EAD44CC61B5DD454004E0A69 /* SidebarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarTableViewController.m; sourceTree = "<group>"; };
 		EAD44CC81B5DD463004E0A69 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -132,6 +137,24 @@
 			path = "../../../Downloads/MGSwipeTableCell-master/MGSwipeTableCell";
 			sourceTree = "<group>";
 		};
+		EA56F5701BC73E5C003217A6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EA56F5711BC73E5C003217A6 /* YTPlayerView-iframe-player.html */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EA56F5721BC73E5C003217A6 /* Youtube-ios-helper-Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EA56F5731BC73E5C003217A6 /* YTPlayerView.h */,
+				EA56F5741BC73E5C003217A6 /* YTPlayerView.m */,
+			);
+			name = "Youtube-ios-helper-Classes";
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		EAACAC1E1BB8A99500579225 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +189,8 @@
 		EAD44C941B5DD19E004E0A69 /* FitMe */ = {
 			isa = PBXGroup;
 			children = (
+				EA56F5701BC73E5C003217A6 /* Assets */,
+				EA56F5721BC73E5C003217A6 /* Youtube-ios-helper-Classes */,
 				EAACAC1E1BB8A99500579225 /* images */,
 				EA3B0D5A1B94E21200321F20 /* MGSwipeTableCell */,
 				EAD44CBE1B5DD38D004E0A69 /* SWRevealViewController */,
@@ -179,8 +204,8 @@
 				EAD44C951B5DD19E004E0A69 /* Supporting Files */,
 				EAD44CBF1B5DD420004E0A69 /* WorkoutViewController.h */,
 				EAD44CC01B5DD420004E0A69 /* WorkoutViewController.m */,
-				EAD44CC21B5DD436004E0A69 /* ExerciseViewController.h */,
-				EAD44CC31B5DD436004E0A69 /* ExerciseViewController.m */,
+				EAD44CC21B5DD436004E0A69 /* ExerciseTutorialViewController.h */,
+				EAD44CC31B5DD436004E0A69 /* ExerciseTutorialViewController.m */,
 				EAD44CC51B5DD454004E0A69 /* SidebarTableViewController.h */,
 				EAD44CC61B5DD454004E0A69 /* SidebarTableViewController.m */,
 				EAD44CC81B5DD463004E0A69 /* MainViewController.h */,
@@ -327,6 +352,7 @@
 				EAACAC261BB8A9A300579225 /* arms.png in Resources */,
 				EAACAC271BB8A9A300579225 /* back.png in Resources */,
 				EAD44CA11B5DD19E004E0A69 /* Main.storyboard in Resources */,
+				EA56F5751BC73E5C003217A6 /* YTPlayerView-iframe-player.html in Resources */,
 				EAD44CA61B5DD19E004E0A69 /* LaunchScreen.xib in Resources */,
 				EAACAC281BB8A9A300579225 /* chest.png in Resources */,
 				EAD44CA31B5DD19E004E0A69 /* Images.xcassets in Resources */,
@@ -350,7 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6B6D8A1B65F2730096E140 /* W4_6WorkoutViewController.m in Sources */,
-				EAD44CC41B5DD436004E0A69 /* ExerciseViewController.m in Sources */,
+				EAD44CC41B5DD436004E0A69 /* ExerciseTutorialViewController.m in Sources */,
 				EA1A3C281BB371E8006B4980 /* WorkoutResultViewController.m in Sources */,
 				EAD44C9E1B5DD19E004E0A69 /* ViewController.m in Sources */,
 				EAD44C9B1B5DD19E004E0A69 /* AppDelegate.m in Sources */,
@@ -367,6 +393,7 @@
 				EAE419711B5F421C00DFDE9E /* Week4_6ViewController.m in Sources */,
 				EA6B6D831B65F0F90096E140 /* W10_12WorkoutViewController.m in Sources */,
 				EAE419741B5F423100DFDE9E /* Week7_9ViewController.m in Sources */,
+				EA56F5761BC73E5C003217A6 /* YTPlayerView.m in Sources */,
 				EAD44CC71B5DD454004E0A69 /* SidebarTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 #import "SidebarTableViewController.h"
 #import "SWRevealViewController.h"
-#import "ExerciseViewController.h"
+#import "ExerciseTutorialViewController.h"
 
 @interface SidebarTableViewController ()
 

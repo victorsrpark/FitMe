@@ -235,6 +235,7 @@
     //NSLog(@"completed items%@", workouts[@"completed"]);
 
     
+    //cell.leftExpansion.buttonIndex = leftExpandableIndex;
     
     
     
